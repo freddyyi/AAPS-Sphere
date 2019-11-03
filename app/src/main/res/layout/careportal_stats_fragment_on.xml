@@ -22,14 +22,14 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="35dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0"
-                android:src="@drawable/icon_cp_age_canula"
                 android:gravity="center_vertical"
                 android:paddingStart="2dp"
                 android:paddingEnd="1dp"
-                android:scaleType="centerInside"/>
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_cp_age_canula" />
 
             <TextView
                 android:id="@+id/careportal_canulaage"
@@ -40,14 +40,14 @@
                 android:textSize="11sp" />
 
             <ImageView
-                android:layout_width="35dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0"
-                android:src="@drawable/icon_cp_age_insulin"
                 android:gravity="center_vertical"
                 android:paddingStart="2dp"
                 android:paddingEnd="1dp"
-                android:scaleType="centerInside"/>
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_cp_age_insulin" />
 
             <TextView
                 android:id="@+id/careportal_insulinage"
@@ -59,12 +59,12 @@
 
 
             <ImageView
-                android:layout_width="35dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0"
-                android:src="@drawable/icon_cp_age_battery"
                 android:gravity="center_vertical"
-                android:scaleType="centerInside"/>
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_cp_age_battery" />
 
             <TextView
                 android:id="@+id/careportal_pbage"
@@ -77,13 +77,13 @@
                 android:textSize="11sp" />
 
             <ImageView
-                android:layout_width="35dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/icon_cp_age_sensor"
                 android:gravity="center_vertical"
                 android:paddingStart="2dp"
                 android:paddingEnd="1dp"
-                android:scaleType="centerInside"/>
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_cp_age_sensor" />
 
             <TextView
                 android:id="@+id/careportal_sensorage"
