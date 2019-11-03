@@ -52,7 +52,7 @@
                 android:scaleType="centerInside"/>
 
             <TextView
-                android:id="@+id/careportal_prLevel"
+                android:id="@+id/careportal_insulinage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -92,7 +92,7 @@
                 android:scaleType="centerInside"/>
 
             <TextView
-                android:id="@+id/careportal_pbLevel"
+                android:id="@+id/careportal_pumpbatterychange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
