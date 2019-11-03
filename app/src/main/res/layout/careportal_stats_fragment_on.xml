@@ -24,16 +24,17 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/icon_cp_age_sensor"
+                android:layout_weight="0"
+                android:src="@drawable/icon_cp_age_canula"
                 android:gravity="center_vertical"
                 android:paddingStart="2dp"
                 android:paddingEnd="1dp"
                 android:scaleType="centerInside"/>
 
             <TextView
-                android:id="@+id/careportal_sensorage"
+                android:id="@+id/careportal_canulaage"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:textSize="11sp" />
@@ -56,23 +57,6 @@
                 android:gravity="center_vertical"
                 android:textSize="11sp" />
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0"
-                android:src="@drawable/icon_cp_age_canula"
-                android:gravity="center_vertical"
-                android:paddingStart="2dp"
-                android:paddingEnd="1dp"
-                android:scaleType="centerInside"/>
-
-            <TextView
-                android:id="@+id/careportal_canulaage"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:textSize="11sp" />
 
             <ImageView
                 android:layout_width="40dp"
@@ -90,6 +74,23 @@
                 android:gravity="center_vertical"
                 android:paddingStart="1dp"
                 android:paddingEnd="1dp"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_cp_age_sensor"
+                android:gravity="center_vertical"
+                android:paddingStart="2dp"
+                android:paddingEnd="1dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/careportal_sensorage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:textSize="11sp" />
 
         </LinearLayout>
