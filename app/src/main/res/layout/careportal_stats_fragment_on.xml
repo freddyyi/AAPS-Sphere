@@ -36,8 +36,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="1dp"
-                android:paddingEnd="2dp"
                 android:textSize="10sp" />
 
             <ImageView
@@ -48,7 +46,6 @@
                 android:gravity="center_vertical"
                 android:paddingStart="2dp"
                 android:paddingEnd="1dp"
-
                 android:scaleType="centerInside"/>
 
             <TextView
@@ -57,8 +54,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="1dp"
-                android:paddingEnd="2dp"
                 android:textSize="10sp" />
 
             <ImageView
@@ -77,8 +72,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:paddingStart="1dp"
-                android:paddingEnd="2dp"
                 android:textSize="10sp" />
 
             <ImageView
@@ -87,8 +80,6 @@
                 android:layout_weight="0"
                 android:src="@drawable/icon_cp_age_battery"
                 android:gravity="center_vertical"
-                android:paddingStart="2dp"
-                android:paddingEnd="1dp"
                 android:scaleType="centerInside"/>
 
             <TextView
