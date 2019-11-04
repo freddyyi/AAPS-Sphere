@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:background="?android:attr/colorControlHighlight"
-            android:layout_height="45dp"
+            android:layout_height="30dp"
             android:paddingTop="0dp"
             android:paddingBottom="0dp"
             android:layout_marginLeft="2dp"
@@ -37,7 +37,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:textSize="13sp" />
+                android:textSize="11sp" />
 
             <ImageView
                 android:layout_width="30dp"
@@ -55,7 +55,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:textSize="13sp" />
+                android:textSize="11sp" />
 
 
             <ImageView
@@ -74,7 +74,7 @@
                 android:gravity="center_vertical"
                 android:paddingStart="1dp"
                 android:paddingEnd="1dp"
-                android:textSize="13sp" />
+                android:textSize="11sp" />
 
             <ImageView
                 android:layout_width="30dp"
@@ -91,7 +91,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:textSize="13sp" />
+                android:textSize="11sp" />
 
         </LinearLayout>
 
