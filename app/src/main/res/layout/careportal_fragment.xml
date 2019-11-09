@@ -19,7 +19,7 @@
 
             <include
                 android:id="@+id/careportal_stats"
-                layout="@layout/careportal_stats_fragment_on"
+                layout="@layout/careportal_stats_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
