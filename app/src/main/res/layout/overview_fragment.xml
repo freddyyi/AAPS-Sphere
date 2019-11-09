@@ -25,7 +25,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                 </androidx.recyclerview.widget.RecyclerView>
-<!-- Loop Layout -->
+                <!-- Loop Layout -->
                 <LinearLayout
                     android:id="@+id/overview_looplayout"
                     android:layout_width="match_parent"
@@ -75,7 +75,7 @@
 
                 </LinearLayout>
 
-<!-- Pump Status Layout -->
+                <!-- Pump Status Layout -->
 
                 <LinearLayout
                     android:id="@+id/overview_pumpstatuslayout"
@@ -107,7 +107,7 @@
 
                     <LinearLayout
                         android:layout_width="353dp"
-                        android:layout_height="180dp"
+                        android:layout_height="170dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -308,7 +308,7 @@
                                 android:textColor="#FFFFFF"
                                 android:textSize="17sp" />
                         </LinearLayout>
-<!--  STATUSLIGHTS -->
+<!--  STATUSLIGHTS
                         <LinearLayout
                             android:id="@+id/overview_statuslights"
                             android:layout_width="match_parent"
@@ -326,15 +326,15 @@
                                 android:text=""
                                 android:textSize="15sp" />
 
- <!--                           <TextView
-                                android:id="@+id/overview_insulinage"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginHorizontal="3dp"
-                                android:gravity="center"
-                                android:paddingHorizontal="5dp"
-                                android:text=""
-                                android:textSize="15sp" /> -->
+                          <TextView
+                              android:id="@+id/overview_insulinage"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginHorizontal="3dp"
+                              android:gravity="center"
+                              android:paddingHorizontal="5dp"
+                              android:text=""
+                              android:textSize="15sp" />
 
                             <TextView
                                 android:id="@+id/overview_reservoirlevel"
@@ -366,7 +366,7 @@
                                 android:text=""
                                 android:textSize="15sp" />
 
-                        </LinearLayout>
+                        </LinearLayout> -->
 
                     </LinearLayout>
 
@@ -378,6 +378,18 @@
                                    android:layout_height="5dp"
                                    android:src="@drawable/dotted"
                                    android:layerType="software" -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/careportal_stats"
+                        layout="@layout/careportal_stats_fragment_on"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -445,13 +457,13 @@
             </LinearLayout>
 
 
-<!-- Gestrichelte Linie
-               <ImageView
-                   android:layout_width="match_parent"
-                   android:layout_height="5dp"
-                   android:src="@drawable/dotted"
-                   android:layerType="software" /> -->
-<!-- Untere Funktionsbutton Reihe -->
+            <!-- Gestrichelte Linie
+                           <ImageView
+                               android:layout_width="match_parent"
+                               android:layout_height="5dp"
+                               android:src="@drawable/dotted"
+                               android:layerType="software" /> -->
+            <!-- Untere Funktionsbutton Reihe -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
