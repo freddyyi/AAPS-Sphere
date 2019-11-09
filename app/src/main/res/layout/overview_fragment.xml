@@ -101,7 +101,7 @@
 <!-- Blutzuckerwert, AVG und TimeAgo -->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="170dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -190,7 +190,7 @@
 
                     </LinearLayout>
 
-<!--  IOB, COB, AS, BAS und Pumpe -->
+                    <!--  IOB, COB, AS, BAS und Pumpe -->
                     <LinearLayout
                         android:layout_width="380dp"
                         android:layout_height="155dp"
@@ -308,7 +308,7 @@
                                 android:textColor="#FFFFFF"
                                 android:textSize="17sp" />
                         </LinearLayout>
-<!--  STATUSLIGHTS
+                        <!--  STATUSLIGHTS
                         <LinearLayout
                             android:id="@+id/overview_statuslights"
                             android:layout_width="match_parent"
