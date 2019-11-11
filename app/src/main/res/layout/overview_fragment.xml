@@ -303,7 +303,7 @@
                                 android:id="@+id/overview_pump"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_marginStart="0dp"
+                                android:layout_marginStart="6dp"
                                 android:text=""
                                 android:textColor="#FFFFFF"
                                 android:textSize="17sp" />
