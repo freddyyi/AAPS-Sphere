@@ -458,25 +458,18 @@
             </LinearLayout>
 
 
-            <!-- Gestrichelte Linie
+
                            <ImageView
                                android:layout_width="match_parent"
                                android:layout_height="5dp"
                                android:src="@drawable/dotted"
-                               android:layerType="software" /> -->
+                               android:layerType="software" />
             <!-- Untere Funktionsbutton Reihe -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="5dp"
-                    android:src="@drawable/dotted"
-                    android:layerType="software" />
-
-
+                
                 <info.nightscout.androidaps.utils.SingleClickButton
                     android:id="@+id/overview_treatmentbutton"
                     android:background="@drawable/bg_trans_complete"
