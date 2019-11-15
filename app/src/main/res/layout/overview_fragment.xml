@@ -26,7 +26,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                 </androidx.recyclerview.widget.RecyclerView>
-                <!-- Loop Layout -->
+<!-- Loop Layout -->
                 <LinearLayout
                     android:id="@+id/overview_looplayout"
                     android:layout_width="match_parent"
@@ -76,7 +76,7 @@
 
                 </LinearLayout>
 
-                <!-- Pump Status Layout -->
+<!-- Pump Status Layout -->
 
                 <LinearLayout
                     android:id="@+id/overview_pumpstatuslayout"
@@ -178,7 +178,7 @@
                                     android:textColor="#FFFFFF"
                                     android:textSize="17sp" />
 
-                                <!--                               <TextView
+<!--                               <TextView
                                     android:id="@+id/overview_avgdelta"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -191,7 +191,7 @@
 
                     </LinearLayout>
 
-                    <!--  IOB, COB, AS, BAS und Pumpe -->
+<!--  IOB, COB, AS, BAS und Pumpe -->
                     <LinearLayout
                         android:layout_width="380dp"
                         android:layout_height="155dp"
@@ -309,7 +309,7 @@
                                 android:textColor="#FFFFFF"
                                 android:textSize="17sp" />
                         </LinearLayout>
-                        <!--  STATUSLIGHTS
+<!--  STATUSLIGHTS
                         <LinearLayout
                             android:id="@+id/overview_statuslights"
                             android:layout_width="match_parent"
@@ -373,7 +373,7 @@
 
                 </LinearLayout>
 
-                <!-- Eine gestrichelte Linie
+<!-- Eine gestrichelte Linie
                                <ImageView
                                    android:layout_width="match_parent"
                                    android:layout_height="5dp"
@@ -458,13 +458,13 @@
             </LinearLayout>
 
 
-            <!-- Gestrichelte Linie
+<!-- Gestrichelte Linie
                            <ImageView
                                android:layout_width="match_parent"
                                android:layout_height="5dp"
                                android:src="@drawable/dotted"
                                android:layerType="software" /> -->
-            <!-- Untere Funktionsbutton Reihe -->
+<!-- Untere Funktionsbutton Reihe -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
