@@ -87,7 +87,7 @@
                         android:drawableLeft="@drawable/icon_cp_pump_cartridge"
                         android:paddingLeft="0dp"
                         android:paddingRight="0dp"
-                        android:text="Cartridge Wechsel"
+                        android:text="Reservoir Wechsel"
                         android:textSize="15sp"
                         app:layout_column="0"
                         app:layout_columnWeight="1"
