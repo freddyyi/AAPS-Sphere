@@ -342,7 +342,7 @@
                             <TextView
                                 android:id="@+id/overview_pump"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_height="24dp"
                                 android:layout_marginStart="2dp"
                                 android:text=""
                                 android:textColor="#FFFFFF"
