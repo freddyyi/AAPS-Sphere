@@ -127,7 +127,7 @@
                             android:background="@drawable/umrandung_2dp"
                             android:gravity="center_vertical|center_horizontal"
                             android:text="00.0"
-                            android:textSize="38dp"
+                            android:textSize="35dp"
                             android:textStyle="bold" />
 
                         <TextView
