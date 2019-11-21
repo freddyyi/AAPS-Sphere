@@ -24,7 +24,7 @@
             android:paddingRight="0dp"
             android:background="@drawable/white_trans_bg"
             android:drawableLeft="@drawable/icon_actions_profileswitch"
-            android:text="@string/careportal_profileswitch"
+            android:text="@string/nav_logsettings"
             android:textSize="14sp" />
 
 
