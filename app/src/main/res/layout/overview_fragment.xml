@@ -267,9 +267,10 @@
 
                         </LinearLayout>
 
+
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="34dp"
+                            android:layout_height="36dp"
                             android:layout_marginTop="5dp"
                             android:layout_weight="1"
                             android:orientation="horizontal">
@@ -301,7 +302,40 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="1dp"
+                                android:text="@string/as"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:layout_width="18dp"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:textAlignment="viewEnd"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/overview_sensitivity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text=""
+                                android:textSize="17sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
