@@ -113,7 +113,7 @@
 
                     <LinearLayout
                         android:layout_width="353dp"
-                        android:layout_height="170dp"
+                        android:layout_height="175dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -183,7 +183,7 @@
                                     android:textColor="#FFFFFF"
                                     android:textSize="17sp" />
 
-<!--                               <TextView
+                                <!--                               <TextView
                                     android:id="@+id/overview_avgdelta"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
