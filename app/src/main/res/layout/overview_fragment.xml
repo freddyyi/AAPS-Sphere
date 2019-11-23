@@ -39,16 +39,16 @@
                         android:id="@+id/overview_apsmode"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/ic_aaps_logo"
+                        android:background="?android:attr/colorControlHighlight"
+                        android:drawableLeft="@drawable/ic_aaps_logo_white"
                         android:gravity="center_vertical|center_horizontal"
                         android:paddingTop="3dp"
-                        android:paddingBottom="3dp"
                         android:paddingRight="2dp"
-                        android:layout_marginRight="2dp"
+                        android:paddingBottom="3dp"
                         android:text="Open Loop"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:background="?android:attr/colorControlHighlight"/>
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 
                     <TextView
@@ -69,15 +69,15 @@
                         android:id="@+id/overview_temptarget"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/ic_zielkreuz_white"
                         android:layout_weight="1"
+                        android:background="?android:attr/colorControlHighlight"
+                        android:drawableLeft="@drawable/ic_target_white"
                         android:gravity="center_vertical|center_horizontal"
-                        android:text="TempTarget"
-                        android:paddingBottom="3dp"
                         android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="TempTarget"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:textColor="@color/mdtp_white"
-                        android:background="?android:attr/colorControlHighlight"/>
+                        android:textColor="@color/mdtp_white" />
 
                 </LinearLayout>
 
