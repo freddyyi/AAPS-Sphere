@@ -120,11 +120,11 @@
 
                         <TextView
                             android:id="@+id/overview_bg"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
                             android:layout_gravity="top|center"
                             android:layout_marginTop="10dp"
-                            android:background="@drawable/umrandung_2dp"
+                            android:background="@drawable/ic_ball_teal"
                             android:gravity="center_vertical|center_horizontal"
                             android:text="00.0"
                             android:textSize="35dp"
