@@ -210,56 +210,22 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="2dp"
-                                android:layout_marginEnd="1dp"
-                                android:text="@string/iob"
-                                android:textSize="17sp" />
-
-                            <TextView
-                                android:layout_width="12dp"
-                                android:layout_height="wrap_content"
-                                android:text=":"
-                                android:textAlignment="viewEnd"
-                                android:textSize="17sp" />
 
                             <TextView
                                 android:id="@+id/overview_iob"
                                 android:layout_width="wrap_content"
-                                android:layout_height="20dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ball_teal"
                                 android:layout_marginStart="8dp"
                                 android:text=""
                                 android:textColor="@android:color/white"
-                                android:textSize="17sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="2dp"
-                                android:layout_marginEnd="1dp"
-                                android:text="@string/cob"
-                                android:textSize="17sp" />
-
-                            <TextView
-                                android:layout_width="5dp"
-                                android:layout_height="wrap_content"
-                                android:text=":"
-                                android:textAlignment="viewEnd"
                                 android:textSize="17sp" />
 
                             <TextView
                                 android:id="@+id/overview_cob"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/ball_amber"
                                 android:layout_marginStart="8dp"
                                 android:text=""
                                 android:textColor="@android:color/white"
