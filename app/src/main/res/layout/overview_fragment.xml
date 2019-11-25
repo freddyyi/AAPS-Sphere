@@ -215,12 +215,12 @@
                                 android:id="@+id/overview_iob"
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
-                                android:gravity="center_vertical|center_horizontal"
-                                android:background="@drawable/ball_teal"
                                 android:layout_marginStart="8dp"
+                                android:background="@drawable/ball_teal"
+                                android:gravity="center_vertical|center_horizontal"
                                 android:text="@string/insulin_unit_shortname"
                                 android:textColor="@android:color/white"
-                                android:textSize="17sp" />
+                                android:textSize="16sp" />
 
                             <TextView
                                 android:id="@+id/overview_cob"
