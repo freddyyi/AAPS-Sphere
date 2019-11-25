@@ -120,12 +120,12 @@
 
                         <TextView
                             android:id="@+id/overview_bg"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
                             android:layout_gravity="top|center"
                             android:layout_marginTop="10dp"
                             android:layout_marginStart="4dp"
-                            android:background="@drawable/rose_scheibe"
+                            android:background="@drawable/ic_ball_rose"
                             android:gravity="center_vertical|center_horizontal"
                             android:text="00.0"
                             android:textSize="35dp"
@@ -216,7 +216,7 @@
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
                                 android:layout_marginStart="8dp"
-                                android:background="@drawable/ball_teal"
+                                android:background="@drawable/ic_ball_teal"
                                 android:gravity="center_vertical|center_horizontal"
                                 android:text="@string/insulin_unit_shortname"
                                 android:textColor="@android:color/white"
@@ -224,11 +224,11 @@
 
                             <TextView
                                 android:id="@+id/overview_cob"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center_vertical|center_horizontal"
-                                android:background="@drawable/ball_amber"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
                                 android:layout_marginStart="8dp"
+                                android:background="@drawable/ic_ball_amber"
+                                android:gravity="center_vertical|center_horizontal"
                                 android:text=""
                                 android:textColor="@android:color/white"
                                 android:textSize="17sp" />
