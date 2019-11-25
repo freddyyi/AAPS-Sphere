@@ -215,7 +215,7 @@
                                 android:id="@+id/overview_iob"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/umrandung_1dp_amber"
+                                android:background="@drawable/teal_background"
                                 android:layout_marginStart="8dp"
                                 android:text="@string/basal_short"
                                 android:textColor="@android:color/white"
