@@ -213,8 +213,8 @@
 
                             <TextView
                                 android:id="@+id/overview_iob"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
                                 android:background="@drawable/ball_teal"
                                 android:layout_marginStart="8dp"
                                 android:text="@string/insulin_unit_shortname"
