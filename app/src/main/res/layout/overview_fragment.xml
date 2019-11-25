@@ -112,10 +112,10 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="353dp"
-                        android:layout_height="175dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
 
                         <TextView
@@ -270,9 +270,10 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="45dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:layout_weight="1"
+                            android:background="@drawable/white_trans_bg"
                             android:orientation="horizontal">
 
                             <TextView
@@ -293,49 +294,18 @@
                             <TextView
                                 android:id="@+id/overview_basebasal"
                                 android:layout_width="166dp"
-                                android:layout_height="45dp"
+                                android:layout_height="28dp"
                                 android:layout_marginStart="8dp"
-                                android:text="0.50U/h @17:35 1/30min - 0.40U/h"
+                                android:text="0.50U/h"
                                 android:textSize="17sp" />
 
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="2dp"
-                                android:layout_marginEnd="1dp"
-                                android:text="@string/as"
-                                android:textSize="17sp" />
-
-                            <TextView
-                                android:layout_width="18dp"
-                                android:layout_height="wrap_content"
-                                android:text=":"
-                                android:textAlignment="viewEnd"
-                                android:textSize="17sp" />
-
-                            <TextView
-                                android:id="@+id/overview_sensitivity"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:text=""
-                                android:textColor="@color/inrange"
-                                android:textSize="17sp" />
-
-                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="24dp"
+                            android:background="@drawable/white_trans_bg"
                             android:layout_marginTop="5dp"
                             android:layout_weight="1"
                             android:orientation="horizontal">
