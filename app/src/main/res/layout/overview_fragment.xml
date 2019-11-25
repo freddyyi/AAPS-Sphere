@@ -213,9 +213,9 @@
 
                             <TextView
                                 android:id="@+id/overview_iob"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/teal_background"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/ball_teal"
                                 android:layout_marginStart="8dp"
                                 android:text="@string/insulin_unit_shortname"
                                 android:textColor="@android:color/white"
