@@ -107,7 +107,7 @@
 <!-- Blutzuckerwert, AVG und TimeAgo -->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="108dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -123,8 +123,8 @@
                             android:layout_width="70dp"
                             android:layout_height="70dp"
                             android:layout_gravity="top|center"
-                            android:layout_marginTop="10dp"
                             android:layout_marginStart="4dp"
+                            android:layout_marginTop="10dp"
                             android:background="@drawable/ic_ball_rose"
                             android:gravity="center_vertical|center_horizontal"
                             android:text="00.0"
@@ -135,8 +135,8 @@
                             android:id="@+id/overview_arrow"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
                             android:layout_gravity="top|center"
+                            android:layout_marginStart="5dp"
                             android:gravity="center_vertical|center_horizontal"
                             android:text="→"
                             android:textSize="30sp"
@@ -197,7 +197,7 @@
 
                     </LinearLayout>
 
-<!--  IOB, COB, AS, BAS und Pumpe -->
+                    <!--  IOB, COB, AS, BAS und Pumpe -->
                     <LinearLayout
                         android:layout_width="380dp"
                         android:layout_height="160dp"
@@ -250,9 +250,9 @@
                         </LinearLayout>
 
 
-                        <LinearLayout
+                        <!--                       <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="43dp"
                             android:layout_marginTop="5dp"
                             android:layout_weight="1"
                             android:background="@drawable/white_trans_bg"
@@ -266,8 +266,8 @@
                                 android:text=""
                                 android:textColor="#FFFFFF"
                                 android:textSize="17sp" />
-                        </LinearLayout>
-<!--  STATUSLIGHTS
+                        </LinearLayout> -->
+                        <!--  STATUSLIGHTS
                         <LinearLayout
                             android:id="@+id/overview_statuslights"
                             android:layout_width="match_parent"
