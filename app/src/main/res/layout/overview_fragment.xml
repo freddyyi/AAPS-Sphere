@@ -217,7 +217,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/ball_teal"
                                 android:layout_marginStart="8dp"
-                                android:text="00.0"
+                                android:text="@string/basal_short"
                                 android:textColor="@android:color/white"
                                 android:textSize="17sp" />
 
@@ -227,7 +227,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/ball_amber"
                                 android:layout_marginStart="8dp"
-                                android:text="00.0"
+                                android:text=""
                                 android:textColor="@android:color/white"
                                 android:textSize="17sp" />
 
