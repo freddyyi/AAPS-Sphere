@@ -244,20 +244,6 @@
                             android:background="@drawable/white_trans_bg"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="2dp"
-                                android:layout_marginEnd="1dp"
-                                android:text="@string/basal_short"
-                                android:textSize="17sp" />
-
-                            <TextView
-                                android:layout_width="8dp"
-                                android:layout_height="wrap_content"
-                                android:text=":"
-                                android:textAlignment="viewEnd"
-                                android:textSize="17sp" />
 
                             <TextView
                                 android:id="@+id/overview_basebasal"
@@ -272,10 +258,10 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="24dp"
-                            android:background="@drawable/white_trans_bg"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:layout_weight="1"
+                            android:background="@drawable/white_trans_bg"
                             android:orientation="horizontal">
 
                             <TextView
