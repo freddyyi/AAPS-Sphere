@@ -217,7 +217,7 @@
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
                                 android:background="@drawable/ic_ball_teal"
-                                android:gravity="center_vertical|top"
+                                android:gravity="center_vertical|center_horizontal"
                                 android:text="@string/insulin_unit_shortname"
                                 android:textColor="@android:color/white"
                                 android:textSize="15sp" />
