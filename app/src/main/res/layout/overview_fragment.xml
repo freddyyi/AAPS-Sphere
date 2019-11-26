@@ -474,7 +474,7 @@
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:layout_weight="0.5"
-                    android:drawableTop="@drawable/carb_amber"
+                    android:drawableTop="@drawable/ic_carb_amber"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:text="@string/overview_carbs_label"
