@@ -112,7 +112,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="350dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="horizontal">
@@ -136,7 +136,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="top|center"
-                            android:layout_marginStart="10dp"
+                            android:layout_marginStart="5dp"
                             android:gravity="center_vertical|center_horizontal"
                             android:text="→"
                             android:textSize="30sp"
