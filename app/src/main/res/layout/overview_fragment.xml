@@ -70,14 +70,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/ic_target_white"
+                        android:background="?android:attr/colorControlHighlight"
+                        android:drawableLeft="@drawable/ic_zielkreuz_white"
                         android:gravity="center_vertical|center_horizontal"
                         android:paddingTop="3dp"
                         android:paddingBottom="3dp"
                         android:text="TempTarget"
                         android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:textColor="@color/mdtp_white"
-                        android:background="?android:attr/colorControlHighlight"/>
+                        android:textColor="@color/mdtp_white" />
 
                 </LinearLayout>
 
