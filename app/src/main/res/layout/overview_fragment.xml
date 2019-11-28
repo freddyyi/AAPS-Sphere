@@ -208,7 +208,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="65dp"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
 
@@ -224,10 +224,9 @@
 
                             <TextView
                                 android:id="@+id/overview_cob"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginTop="15dp"
                                 android:background="@drawable/ic_ball_amber"
                                 android:gravity="center_vertical|center_horizontal"
                                 android:text=""
@@ -240,7 +239,6 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginTop="5dp"
                                 android:background="@drawable/ic_ball_teal"
                                 android:gravity="center_vertical|center_horizontal"
                                 android:text=""
@@ -249,7 +247,35 @@
 
                         </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
 
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="left"
+                                android:background="@drawable/insulin_2">
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/carb_2">
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="right"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/icon_cp_bolus_correction">
+                            </TextView>
+
+                        </LinearLayout>
                         <!--                       <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="43dp"
