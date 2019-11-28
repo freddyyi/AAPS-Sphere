@@ -243,7 +243,7 @@
                                 android:layout_marginTop="5dp"
                                 android:background="@drawable/ic_ball_teal"
                                 android:gravity="center_vertical|center_horizontal"
-                                android:text=""
+                                android:text="@string/basal_short"
                                 android:textColor="@android:color/white"
                                 android:textSize="17sp" />
 
