@@ -1303,7 +1303,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         final IobTotal basalIob = TreatmentsPlugin.getPlugin().getLastCalculationTempBasals().round();
 
         if (shorttextmode) {
-            String iobtext = DecimalFormatter.to2Decimal(bolusIob.iob + basalIob.basaliob) + "U";
+            String iobtext = DecimalFormatter.to2Decimal(bolusIob.iob + basalIob.basaliob) ;
             iobView.setText(iobtext);
 //            iobView.setOnClickListener(v -> {
 //                String iobtext1 = DecimalFormatter.to2Decimal(bolusIob.iob + basalIob.basaliob) + "U\n"
@@ -1317,7 +1317,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
 //                    + MainApp.gs(R.string.basal) + ": " + DecimalFormatter.to2Decimal(basalIob.basaliob) + "U)";
 //            iobView.setText(iobtext);
         } else {
-            String iobtext = DecimalFormatter.to2Decimal(bolusIob.iob + basalIob.basaliob) + "U";
+            String iobtext = DecimalFormatter.to2Decimal(bolusIob.iob + basalIob.basaliob) ;
 //                    + DecimalFormatter.to2Decimal(bolusIob.iob) + "/"
 //                    + DecimalFormatter.to2Decimal(basalIob.basaliob) + ")";
             iobView.setText(iobtext);
