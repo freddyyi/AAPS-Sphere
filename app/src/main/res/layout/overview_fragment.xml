@@ -253,26 +253,33 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
                                 android:layout_gravity="left"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
                                 android:background="@drawable/insulin_2">
+
                             </TextView>
 
                             <TextView
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="8dp"
+                                android:layout_marginStart="17dp"
+                                android:layout_marginBottom="5dp"
                                 android:background="@drawable/carb_2">
+
                             </TextView>
 
                             <TextView
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
                                 android:layout_gravity="right"
-                                android:layout_marginStart="8dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
                                 android:background="@drawable/icon_cp_bolus_correction">
+
                             </TextView>
 
                         </LinearLayout>
