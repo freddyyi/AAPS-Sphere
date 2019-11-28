@@ -1328,9 +1328,9 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             String cobText = MainApp.gs(R.string.value_unavailable_short);
             CobInfo cobInfo = IobCobCalculatorPlugin.getPlugin().getCobInfo(false, "Overview COB");
             if (cobInfo.displayCob != null) {
-                cobText = DecimalFormatter.to0Decimal(cobInfo.displayCob);
+                cobText = DecimalFormatter.to0Decimal(cobInfo.displayCob) + "G";
                 if (cobInfo.futureCarbs > 0)
-                    cobText += "(" + DecimalFormatter.to0Decimal(cobInfo.futureCarbs) + ")" + "C";
+                    cobText += "(" + DecimalFormatter.to0Decimal(cobInfo.futureCarbs) + ")";
             }
             cobView.setText(cobText);
         }
