@@ -124,7 +124,7 @@
                             android:layout_height="70dp"
                             android:layout_gravity="top|center"
                             android:layout_marginStart="4dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="15dp"
                             android:background="@drawable/ic_ball_lightgrey"
                             android:gravity="center_vertical|center_horizontal"
                             android:text="00.0"
@@ -146,7 +146,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="85dp"
                             android:layout_gravity="top"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginTop="20dp"
                             android:gravity="top"
                             android:orientation="vertical">
 
