@@ -200,7 +200,7 @@
 <!--  IOB, COB, AS, BAS und Pumpe -->
                     <LinearLayout
                         android:layout_width="380dp"
-                        android:layout_height="160dp"
+                        android:layout_height="95dp"
                         android:layout_marginLeft="0dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="1"
@@ -214,20 +214,20 @@
 
                             <TextView
                                 android:id="@+id/overview_iob"
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
                                 android:background="@drawable/ic_ball_cyan"
                                 android:gravity="center_vertical|center_horizontal"
                                 android:text=""
                                 android:textColor="@android:color/white"
-                                android:textSize="14sp" />
+                                android:textSize="17sp" />
 
                             <TextView
                                 android:id="@+id/overview_cob"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginTop="15dp"
                                 android:background="@drawable/ic_ball_amber"
                                 android:gravity="center_vertical|center_horizontal"
                                 android:text=""
@@ -243,7 +243,7 @@
                                 android:layout_marginTop="5dp"
                                 android:background="@drawable/ic_ball_teal"
                                 android:gravity="center_vertical|center_horizontal"
-                                android:text="@string/basal_short"
+                                android:text=""
                                 android:textColor="@android:color/white"
                                 android:textSize="17sp" />
 
