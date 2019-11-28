@@ -1172,7 +1172,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             if (activeTemp != null) {
                 basalText = "T: " + activeTemp.toStringVeryShort();
             } else {
-                basalText = DecimalFormatter.to2Decimal(profile.getBasal()) + "U/h";
+                basalText = DecimalFormatter.to2Decimal(profile.getBasal()) ;
             }
             baseBasalView.setOnClickListener(v -> {
                 String fullText = MainApp.gs(R.string.pump_basebasalrate_label) + ": " + DecimalFormatter.to2Decimal(profile.getBasal()) + "U/h\n";
