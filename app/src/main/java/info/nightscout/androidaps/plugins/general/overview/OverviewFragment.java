@@ -1317,9 +1317,9 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
 //                    + MainApp.gs(R.string.basal) + ": " + DecimalFormatter.to2Decimal(basalIob.basaliob) + "U)";
 //            iobView.setText(iobtext);
         } else {
-            String iobtext = DecimalFormatter.to2Decimal(bolusIob.iob + basalIob.basaliob) + "U ("
-                    + DecimalFormatter.to2Decimal(bolusIob.iob) + "/"
-                    + DecimalFormatter.to2Decimal(basalIob.basaliob) + ")";
+            String iobtext = DecimalFormatter.to2Decimal(bolusIob.iob + basalIob.basaliob) + "U";
+//                    + DecimalFormatter.to2Decimal(bolusIob.iob) + "/"
+//                    + DecimalFormatter.to2Decimal(basalIob.basaliob) + ")";
             iobView.setText(iobtext);
         }
 
