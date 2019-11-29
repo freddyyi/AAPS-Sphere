@@ -1172,10 +1172,10 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             if (activeTemp != null) {
                 basalText = "T: " + activeTemp.toStringVeryShort();
             } else {
-                basalText = DecimalFormatter.to2Decimal(profile.getBasal()) + "U/h";
+                basalText = DecimalFormatter.to2Decimal(profile.getBasal()) ;
             }
             baseBasalView.setOnClickListener(v -> {
-                String fullText = MainApp.gs(R.string.pump_basebasalrate_label) + ": " + DecimalFormatter.to2Decimal(profile.getBasal()) + "U/h\n";
+                String fullText = MainApp.gs(R.string.pump_basebasalrate_label) + ": " + DecimalFormatter.to2Decimal(profile.getBasal()) ;
                 if (activeTemp != null) {
                     fullText += MainApp.gs(R.string.pump_tempbasal_label) + ": " + activeTemp.toStringFull();
                 }
@@ -1187,9 +1187,9 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
                 basalText = activeTemp.toStringFull() + " ";
             }
             if (Config.NSCLIENT)
-                basalText += "(" + DecimalFormatter.to2Decimal(profile.getBasal()) + " U/h)";
+                basalText += "(" + DecimalFormatter.to2Decimal(profile.getBasal()) ;
             else if (pump.getPumpDescription().isTempBasalCapable) {
-                basalText += "(" + DecimalFormatter.to2Decimal(pump.getBaseBasalRate()) + "U/h)";
+                basalText += "(" + DecimalFormatter.to2Decimal(pump.getBaseBasalRate()) ;
             }
         }
         if (activeTemp != null) {
