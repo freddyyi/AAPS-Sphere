@@ -1187,9 +1187,9 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
                 basalText = activeTemp.toStringFull() + " ";
             }
             if (Config.NSCLIENT)
-                basalText += "(" + DecimalFormatter.to2Decimal(profile.getBasal()) + " U/h)";
+                basalText += "(" + DecimalFormatter.to2Decimal(profile.getBasal()) ;
             else if (pump.getPumpDescription().isTempBasalCapable) {
-                basalText += "(" + DecimalFormatter.to2Decimal(pump.getBaseBasalRate()) + "U/h)";
+                basalText += "(" + DecimalFormatter.to2Decimal(pump.getBaseBasalRate()) ;
             }
         }
         if (activeTemp != null) {
