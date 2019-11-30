@@ -270,8 +270,8 @@
                             </ImageView>
 
                             <ImageView
-                                android:layout_width="33dp"
-                                android:layout_height="33dp"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="14dp"
                                 android:layout_marginBottom="5dp"
