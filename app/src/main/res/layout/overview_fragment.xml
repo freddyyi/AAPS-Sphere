@@ -274,6 +274,7 @@
                                 android:layout_height="33dp"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="14dp"
+                                android:layout_marginBottom="4dp"
                                 android:background="@drawable/carb_2">
 
                             </ImageView>
