@@ -244,7 +244,7 @@
                                 android:layout_width="42dp"
                                 android:layout_height="42dp"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginTop="-4dp"
                                 android:background="@drawable/ic_ball_teal"
                                 android:gravity="center_vertical|center_horizontal"
                                 android:text=""
@@ -272,7 +272,7 @@
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="16dp"
+                                android:layout_marginStart="15dp"
                                 android:layout_marginBottom="5dp"
                                 android:background="@drawable/carb_2">
 
@@ -282,7 +282,7 @@
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
                                 android:layout_gravity="end"
-                                android:layout_marginStart="13dp"
+                                android:layout_marginStart="12dp"
                                 android:layout_marginTop="5dp"
                                 android:background="@drawable/icon_cp_bolus_correction">
 
