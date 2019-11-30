@@ -255,15 +255,15 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
                                 android:layout_gravity="start"
+                                android:gravity="center_vertical|center_horizontal"
                                 android:layout_marginStart="7dp"
-                                android:layout_marginTop="10dp"
                                 android:background="@drawable/insulin_2">
 
                             </ImageView>
@@ -272,8 +272,9 @@
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
                                 android:layout_gravity="center"
+                                android:layout_marginTop="-2dp"
+                                android:gravity="center_vertical|center_horizontal"
                                 android:layout_marginStart="15dp"
-                                android:layout_marginBottom="5dp"
                                 android:background="@drawable/carb_2">
 
                             </ImageView>
@@ -282,8 +283,8 @@
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
                                 android:layout_gravity="end"
+                                android:gravity="center_vertical|center_horizontal"
                                 android:layout_marginStart="12dp"
-                                android:layout_marginTop="5dp"
                                 android:background="@drawable/icon_cp_bolus_correction">
 
                             </ImageView>
