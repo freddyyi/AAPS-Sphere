@@ -1175,9 +1175,9 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
                 basalText = DecimalFormatter.to2Decimal(profile.getBasal()) + "U/h";
             }
             baseBasalView.setOnClickListener(v -> {
-                String fullText = MainApp.gs(R.string.pump_basebasalrate_label) + ": " + DecimalFormatter.to2Decimal(profile.getBasal()) + "U/h\n";
+                String fullText = MainApp.gs(R.string.pump_basebasalrate_label);
                 if (activeTemp != null) {
-                    fullText += MainApp.gs(R.string.pump_tempbasal_label) + ": " + activeTemp.toStringFull();
+                    fullText += MainApp.gs(R.string.pump_tempbasal_label);
                 }
                 OKDialog.show(getActivity(), MainApp.gs(R.string.basal), fullText, null);
             });
