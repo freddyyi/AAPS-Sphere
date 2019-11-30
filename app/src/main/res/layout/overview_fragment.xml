@@ -112,7 +112,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="420dp"
+                        android:layout_width="430dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="horizontal">
@@ -216,8 +216,8 @@
 
                             <TextView
                                 android:id="@+id/overview_iob"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="5dp"
                                 android:background="@drawable/ic_ball_cyan"
@@ -228,8 +228,8 @@
 
                             <TextView
                                 android:id="@+id/overview_cob"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="5dp"
                                 android:background="@drawable/ic_ball_amber"
@@ -241,10 +241,10 @@
 
                             <TextView
                                 android:id="@+id/overview_basebasal"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginTop="-4dp"
+                                android:layout_marginTop="5dp"
                                 android:background="@drawable/ic_ball_teal"
                                 android:gravity="center_vertical|center_horizontal"
                                 android:text=""
@@ -262,7 +262,7 @@
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
                                 android:layout_gravity="start"
-                                android:layout_marginStart="5dp"
+                                android:layout_marginStart="7dp"
                                 android:layout_marginTop="10dp"
                                 android:background="@drawable/insulin_2">
 
@@ -272,7 +272,7 @@
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="14dp"
+                                android:layout_marginStart="16dp"
                                 android:layout_marginBottom="5dp"
                                 android:background="@drawable/carb_2">
 
@@ -282,7 +282,7 @@
                                 android:layout_width="35dp"
                                 android:layout_height="35dp"
                                 android:layout_gravity="end"
-                                android:layout_marginStart="12dp"
+                                android:layout_marginStart="13dp"
                                 android:layout_marginTop="5dp"
                                 android:background="@drawable/icon_cp_bolus_correction">
 
