@@ -1168,6 +1168,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
 
         final TemporaryBasal activeTemp = TreatmentsPlugin.getPlugin().getTempBasalFromHistory(System.currentTimeMillis());
         String basalText = "";
+
         if (shorttextmode) {
             if (activeTemp != null) {
                 basalText = "T: " + activeTemp.toStringVeryShort();
@@ -1184,13 +1185,15 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
 
         } else {
             if (activeTemp != null) {
-                basalText = activeTemp.toStringFull() + " ";
+                basalText = DecimalFormatter.to2Decimal(activeTemp.absoluteRate) + "";
+            } else {
+                basalText = DecimalFormatter.to2Decimal(pump.getBaseBasalRate());
             }
-            if (Config.NSCLIENT)
+/*            if (Config.NSCLIENT)
                 basalText += "(" + DecimalFormatter.to2Decimal(profile.getBasal()) + " U/h)";
             else if (pump.getPumpDescription().isTempBasalCapable) {
                 basalText += "(" + DecimalFormatter.to2Decimal(pump.getBaseBasalRate()) + "U/h)";
-            }
+            }*/
         }
         if (activeTemp != null) {
             baseBasalView.setTextColor(MainApp.gc(R.color.color_white));
