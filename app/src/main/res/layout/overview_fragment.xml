@@ -112,7 +112,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="430dp"
+                        android:layout_width="420dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="horizontal">
@@ -209,14 +209,14 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="55dp"
                             android:orientation="horizontal"
                             android:paddingBottom="8dp">
 
 
                             <TextView
                                 android:id="@+id/overview_iob"
-                                android:layout_width="42dp"
+                                android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="5dp"
@@ -244,12 +244,12 @@
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginTop="-6dp"
+                                android:layout_marginTop="-4dp"
                                 android:background="@drawable/ic_ball_teal"
                                 android:gravity="center_vertical|center_horizontal"
                                 android:text=""
                                 android:textColor="@android:color/white"
-                                android:textSize="20sp" />
+                                android:textSize="16sp" />
 
                         </LinearLayout>
 
