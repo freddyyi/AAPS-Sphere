@@ -1333,7 +1333,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             if (cobInfo.displayCob != null) {
                 cobText = DecimalFormatter.to0Decimal(cobInfo.displayCob);
                 if (cobInfo.futureCarbs > 0)
-                    cobText += "(" + DecimalFormatter.to0Decimal(cobInfo.futureCarbs) + ")";
+                    cobText += DecimalFormatter.to0Decimal(cobInfo.futureCarbs);
             }
             cobView.setText(cobText);
         }
