@@ -233,7 +233,7 @@
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="5dp"
                                 android:background="@drawable/ic_ball_amber"
-                                android:gravity="center"
+                                android:gravity="center_vertical|center_horizontal"
                                 android:text=""
                                 android:textColor="@android:color/white"
                                 android:autoSizeMaxTextSize="16sp" />
