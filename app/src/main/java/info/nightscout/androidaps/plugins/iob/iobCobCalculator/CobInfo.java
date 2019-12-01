@@ -22,7 +22,7 @@ public class CobInfo {
         if (displayCob != null) {
             cobStringResult = DecimalFormatter.to0Decimal(displayCob);
             if (futureCarbs > 0) {
-                cobStringResult += "(" + DecimalFormatter.to0Decimal(futureCarbs) + ")";
+                cobStringResult += DecimalFormatter.to0Decimal(futureCarbs);
             }
             cobStringResult += "g";
         }
