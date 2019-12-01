@@ -208,7 +208,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="55dp"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="horizontal"
                             android:paddingBottom="3dp">
@@ -233,7 +233,7 @@
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="5dp"
                                 android:background="@drawable/ic_ball_amber"
-                                android:gravity="center_vertical|center_horizontal"
+                                android:gravity="center"
                                 android:text=""
                                 android:textColor="@android:color/white"
                                 android:autoSizeMaxTextSize="16sp" />
