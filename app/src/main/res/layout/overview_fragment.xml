@@ -41,36 +41,36 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="2dp"
                         android:layout_weight="1"
+                        android:background="@drawable/umrandung_1dp"
                         android:drawableLeft="@drawable/ic_aaps_logo_white"
                         android:gravity="center_vertical|center_horizontal"
                         android:paddingTop="3dp"
                         android:paddingEnd="2dp"
                         android:paddingBottom="3dp"
                         android:text="Open Loop"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:background="@drawable/bg_pille_top"/>
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 
                     <TextView
                         android:id="@+id/overview_activeprofile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
                         android:layout_weight="1"
+                        android:background="@drawable/umrandung_1dp"
                         android:drawableLeft="@drawable/ic_user_white"
                         android:gravity="center_vertical|center_horizontal"
-                        android:paddingBottom="3dp"
                         android:paddingTop="3dp"
-                        android:layout_marginEnd="2dp"
+                        android:paddingBottom="3dp"
                         android:text="Profile"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:background="@drawable/bg_pille_top"/>
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
 
                     <TextView
                         android:id="@+id/overview_temptarget"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_pille_top"
+                        android:background="@drawable/umrandung_1dp"
                         android:drawableLeft="@drawable/ic_zielkreuz_white"
                         android:gravity="center_vertical|center_horizontal"
                         android:paddingTop="3dp"
