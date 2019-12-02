@@ -224,7 +224,7 @@
                                 android:gravity="center"
                                 android:text=""
                                 android:textColor="@android:color/white"
-                                android:autoSizeMaxTextSize="18sp" />
+                                android:autoSizeMaxTextSize="16sp" />
 
                             <TextView
                                 android:id="@+id/overview_cob"
@@ -236,7 +236,7 @@
                                 android:gravity="center"
                                 android:text=""
                                 android:textColor="@android:color/white"
-                                android:autoSizeMaxTextSize="18sp" />
+                                android:autoSizeMaxTextSize="16sp" />
 
 
                             <TextView
@@ -249,7 +249,7 @@
                                 android:gravity="center"
                                 android:text=""
                                 android:textColor="@android:color/white"
-                                android:autoSizeMaxTextSize="18sp" />
+                                android:autoSizeMaxTextSize="16sp" />
 
                         </LinearLayout>
 
