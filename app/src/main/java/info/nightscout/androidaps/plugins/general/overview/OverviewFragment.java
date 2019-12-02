@@ -1133,16 +1133,31 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         // temp target
         TempTarget tempTarget = TreatmentsPlugin.getPlugin().getTempTargetFromHistory();
         if (tempTarget != null) {
-            tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
-
+            Drawable drawable = tempTargetView.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             tempTargetView.setBackgroundColor(MainApp.gc(R.color.ribbonWarning));
             tempTargetView.setVisibility(View.VISIBLE);
             tempTargetView.setText(Profile.toTargetRangeString(tempTarget.low, tempTarget.high, Constants.MGDL, units) + " " + DateUtil.untilString(tempTarget.end()));
         } else {
-            tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
+            Drawable drawable = tempTargetView.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             tempTargetView.setBackgroundColor(MainApp.gc(R.color.ribbonDefault));
             tempTargetView.setText(Profile.toTargetRangeString(profile.getTargetLow(), profile.getTargetHigh(), units, units));
             tempTargetView.setVisibility(View.VISIBLE);
+        }
+
+        activeProfileView.setText(ProfileFunctions.getInstance().getProfileName());
+        if (profile.getPercentage() != 100 || profile.getTimeshift() != 0) {
+            Drawable drawable = activeProfileView.getBackground();
+            drawable = activeProfileView.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0xffE0191D, PorterDuff.Mode.SRC_OUT));
+            activeProfileView.setBackgroundColor(MainApp.gc(R.color.ribbonWarning));
+            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
+        } else {
+            Drawable drawable = activeProfileView.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0xffE0191D, PorterDuff.Mode.SRC_OUT));
+            activeProfileView.setBackgroundColor(MainApp.gc(R.color.ribbonDefault));
+            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
         }
 
         // **** Temp button ****
@@ -1241,19 +1256,6 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
                 extendedBolusView.setVisibility(View.VISIBLE);
         }
 
-        activeProfileView.setText(ProfileFunctions.getInstance().getProfileName());
-        if (profile.getPercentage() != 100 || profile.getTimeshift() != 0) {
-            Drawable drawable = apsModeView.getBackground();
-            drawable = apsModeView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0xffE0191D, PorterDuff.Mode.SRC_OUT));
-            activeProfileView.setBackgroundColor(MainApp.gc(R.color.ribbonWarning));
-            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
-        } else {
-            Drawable drawable = apsModeView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0xffE0191D, PorterDuff.Mode.SRC_OUT));
-            activeProfileView.setBackgroundColor(MainApp.gc(R.color.ribbonDefault));
-            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
-        }
 
         // QuickWizard button
         QuickWizardEntry quickWizardEntry = QuickWizard.INSTANCE.getActive();
