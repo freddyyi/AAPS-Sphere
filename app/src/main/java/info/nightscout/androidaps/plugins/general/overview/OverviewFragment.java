@@ -1120,11 +1120,12 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
                     apsModeView.setText(MainApp.gs(R.string.openloop));
                 }
             } else {
+                drawable = apsModeView.getBackground();
+                drawable.setColorFilter(new PorterDuffColorFilter(0xffE0191D, PorterDuff.Mode.SRC_OUT));
                 apsModeView.setBackgroundColor(MainApp.gc(R.color.ribbonCritical));
                 apsModeView.setText(MainApp.gs(R.string.disabledloop));
                 apsModeView.setTextColor(MainApp.gc(R.color.ribbonTextCritical));
-                drawable = apsModeView.getBackground();
-                drawable.setColorFilter(new PorterDuffColorFilter(0xffE0191D, PorterDuff.Mode.SRC_OUT));
+
             }
         } else {
             apsModeView.setVisibility(View.GONE);
@@ -1149,7 +1150,6 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         activeProfileView.setText(ProfileFunctions.getInstance().getProfileName());
         if (profile.getPercentage() != 100 || profile.getTimeshift() != 0) {
             Drawable drawable = activeProfileView.getBackground();
-            drawable = activeProfileView.getBackground();
             drawable.setColorFilter(new PorterDuffColorFilter(0xffE0191D, PorterDuff.Mode.SRC_OUT));
             activeProfileView.setBackgroundColor(MainApp.gc(R.color.ribbonWarning));
             activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
