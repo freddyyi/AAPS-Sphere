@@ -1086,7 +1086,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         if (Config.APS && pump.getPumpDescription().isTempBasalCapable) {
             apsModeView.setVisibility(View.VISIBLE);
             Drawable drawable = apsModeView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0x50FFFFFF, PorterDuff.Mode.SRC_OUT));
+            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             apsModeView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
             final LoopPlugin loopPlugin = LoopPlugin.getPlugin();
             if (loopPlugin.isEnabled(PluginType.LOOP) && loopPlugin.isSuperBolus()) {
@@ -1135,7 +1135,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
         } else {
             Drawable drawable = tempTargetView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0x50FFFFFF, PorterDuff.Mode.SRC_OUT));
+            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             tempTargetView.setText(Profile.toTargetRangeString(profile.getTargetLow(), profile.getTargetHigh(), units, units));
             tempTargetView.setVisibility(View.VISIBLE);
             tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
@@ -1148,7 +1148,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
         } else {
             Drawable drawable = activeProfileView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0x50FFFFFF, PorterDuff.Mode.SRC_OUT));
+            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
         }
 
