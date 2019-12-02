@@ -1128,17 +1128,17 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         // temp target
         TempTarget tempTarget = TreatmentsPlugin.getPlugin().getTempTargetFromHistory();
         if (tempTarget != null) {
-            tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
             Drawable drawable = tempTargetView.getBackground();
             drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
             tempTargetView.setVisibility(View.VISIBLE);
             tempTargetView.setText(Profile.toTargetRangeString(tempTarget.low, tempTarget.high, Constants.MGDL, units) + " " + DateUtil.untilString(tempTarget.end()));
+            tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
         } else {
-            tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
             Drawable drawable = tempTargetView.getBackground();
             drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             tempTargetView.setText(Profile.toTargetRangeString(profile.getTargetLow(), profile.getTargetHigh(), units, units));
             tempTargetView.setVisibility(View.VISIBLE);
+            tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
         }
 
         activeProfileView.setText(ProfileFunctions.getInstance().getProfileName());
