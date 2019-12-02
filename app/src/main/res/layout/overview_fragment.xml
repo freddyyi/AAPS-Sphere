@@ -145,9 +145,9 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="85dp"
                             android:layout_gravity="top"
-                            android:layout_marginTop="4dp"
+                            android:layout_marginTop="20dp"
                             android:gravity="top"
                             android:orientation="vertical">
 
@@ -175,36 +175,6 @@
 
                                 <TextView
                                     android:id="@+id/overview_delta"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="top|center"
-                                    android:layout_marginTop="0dp"
-                                    android:background="@drawable/white_trans_bg"
-                                    android:gravity="center_vertical|center_horizontal"
-                                    android:paddingRight="5dp"
-                                    android:textColor="#FFFFFF"
-                                    android:textSize="16sp" />
-
-                                <!--                               <TextView
-                                    android:id="@+id/overview_avgdelta"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
-                                    android:textSize="15sp" /> -->
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="top"
-                                android:layout_marginTop="8dp"
-                                android:gravity="top"
-                                android:orientation="vertical">
-
-
-                                <TextView
-                                    android:id="@+id/overview_avgdelta"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="top|center"
