@@ -1052,13 +1052,14 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         // **** BG value ****
         if (lastBG != null) {
             int color = MainApp.gc(R.color.inrange);
+            Drawable drawable = bgView.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
             if (lastBG.valueToUnits(units) < lowLine)
                 color = MainApp.gc(R.color.low);
             else if (lastBG.valueToUnits(units) > highLine)
                 color = MainApp.gc(R.color.high);
+
             bgView.setText(lastBG.valueToUnitsToString(units));
-            Drawable drawable = bgView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             arrowView.setText(lastBG.directionToSymbol());
             bgView.setTextColor(color);
             arrowView.setTextColor(color);
