@@ -21,6 +21,31 @@
                 android:background="@drawable/white_trans_bg"
                 android:layout_weight="1">
 
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_cp_age_canula" />
+
+                <TextView
+                    android:id="@+id/careportal_canulaage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+ <!--                   <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_trans_bg"
+                android:layout_weight="1">
+
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="match_parent"
@@ -28,24 +53,6 @@
                 android:layout_weight="0"
                 android:gravity="center_vertical"
                 android:paddingStart="2dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/icon_cp_age_canula" />
-
-            <TextView
-                android:id="@+id/careportal_canulaage"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="2dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:textSize="15sp" />
-            </LinearLayout>
-
- <!--           <ImageView
-                android:layout_width="28dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0"
-                android:gravity="center_vertical"
                 android:scaleType="centerInside"
                 android:src="@drawable/icon_cp_age_insulin" />
 
@@ -56,7 +63,10 @@
                 android:layout_marginStart="2dp"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:textSize="12sp" /> -->
+                android:textSize="15sp" />
+            </LinearLayout>
+
+ -->
 
 
             <LinearLayout
@@ -66,22 +76,22 @@
                 android:background="@drawable/white_trans_bg"
                 android:layout_weight="1">
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0"
-                android:gravity="center_vertical"
-                android:scaleType="centerInside"
-                android:src="@drawable/icon_cp_age_battery" />
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_cp_age_battery" />
 
-            <TextView
-                android:id="@+id/careportal_pbage"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="2dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/careportal_pbage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
@@ -93,26 +103,26 @@
                 android:background="@drawable/white_trans_bg"
                 android:layout_weight="1">
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:paddingStart="2dp"
-                android:paddingEnd="1dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/icon_cp_age_sensor" />
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="1dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_cp_age_sensor" />
 
-            <TextView
-                android:id="@+id/careportal_sensorage"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:textSize="15sp" />
-
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/careportal_sensorage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp" />
 
             </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 </FrameLayout>
