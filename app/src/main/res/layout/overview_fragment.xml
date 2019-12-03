@@ -111,7 +111,7 @@
 <!-- Blutzuckerwert, AVG und TimeAgo -->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="101dp"
+                    android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -202,7 +202,7 @@
 
                     </LinearLayout>
 
-<!--  IOB, COB, AS, BAS und Pumpe -->
+                    <!--  IOB, COB, AS, BAS und Pumpe -->
                     <LinearLayout
                         android:layout_width="380dp"
                         android:layout_height="95dp"
@@ -224,11 +224,11 @@
                                 android:layout_height="40dp"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="5dp"
+                                android:autoSizeMaxTextSize="16sp"
                                 android:background="@drawable/ic_ball_cyan"
                                 android:gravity="center"
                                 android:text=""
-                                android:textColor="@android:color/white"
-                                android:autoSizeMaxTextSize="16sp" />
+                                android:textColor="@android:color/white" />
 
                             <TextView
                                 android:id="@+id/overview_cob"
@@ -236,11 +236,11 @@
                                 android:layout_height="40dp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="5dp"
+                                android:autoSizeMaxTextSize="16sp"
                                 android:background="@drawable/ic_ball_amber"
                                 android:gravity="center"
                                 android:text=""
-                                android:textColor="@android:color/white"
-                                android:autoSizeMaxTextSize="16sp" />
+                                android:textColor="@android:color/white" />
 
 
                             <TextView
@@ -249,11 +249,11 @@
                                 android:layout_height="40dp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="5dp"
+                                android:autoSizeMaxTextSize="16sp"
                                 android:background="@drawable/ic_ball_teal"
                                 android:gravity="center"
                                 android:text=""
-                                android:textColor="@android:color/white"
-                                android:autoSizeMaxTextSize="16sp" />
+                                android:textColor="@android:color/white" />
 
                         </LinearLayout>
 
