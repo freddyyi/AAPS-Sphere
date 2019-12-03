@@ -1060,6 +1060,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             arrowView.setText(lastBG.directionToSymbol());
             bgView.setTextColor(color);
             arrowView.setTextColor(color);
+
             GlucoseStatus glucoseStatus = GlucoseStatus.getGlucoseStatusData();
             if (glucoseStatus != null) {
                 if (deltaView != null)
