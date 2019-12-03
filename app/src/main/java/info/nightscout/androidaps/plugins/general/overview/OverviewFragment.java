@@ -1056,12 +1056,10 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
                 color = MainApp.gc(R.color.low);
             else if (lastBG.valueToUnits(units) > highLine)
                 color = MainApp.gc(R.color.high);
-
             bgView.setText(lastBG.valueToUnitsToString(units));
             arrowView.setText(lastBG.directionToSymbol());
             bgView.setTextColor(color);
             arrowView.setTextColor(color);
-
             GlucoseStatus glucoseStatus = GlucoseStatus.getGlucoseStatusData();
             if (glucoseStatus != null) {
                 if (deltaView != null)

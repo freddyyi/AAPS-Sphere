@@ -1098,7 +1098,7 @@ Unerwartetes Verhalten.</string>
     <string name="isequal">ist gleich</string>
     <string name="isequalorgreater">ist gleich oder größer als</string>
     <string name="isgreater">ist größer als</string>
-    <string name="isnotavailable">ist nicht verfügbar</string>
+    <string name="isnotavailable">n/a</string>
     <string name="unknown">unbekannt</string>
     <string name="glucoseisnotavailable">Glukosewert nicht verfügbar</string>
     <string name="glucosecomparedmgdl">Glukosewert %1$s %2$.0f %3$s</string>
