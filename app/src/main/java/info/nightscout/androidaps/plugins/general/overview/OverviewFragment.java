@@ -1141,6 +1141,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
         }
 
+        // active profil
         activeProfileView.setText(ProfileFunctions.getInstance().getProfileName());
         if (profile.getPercentage() != 100 || profile.getTimeshift() != 0) {
             Drawable drawable = activeProfileView.getBackground();
@@ -1148,7 +1149,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
         } else {
             Drawable drawable = activeProfileView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
+            drawable.setColorFilter(new PorterDuffColorFilter(0x00000000, PorterDuff.Mode.SRC_OUT));
             activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
         }
 
