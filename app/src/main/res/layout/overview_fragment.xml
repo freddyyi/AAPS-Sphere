@@ -129,7 +129,7 @@
                             android:layout_gravity="top|center"
                             android:layout_marginStart="4dp"
                             android:layout_marginTop="15dp"
-                            android:background="@drawable/ic_ball_lightgrey"
+                            android:background="@drawable/bg_pille_top"
                             android:gravity="center_vertical|center_horizontal"
                             android:text="00.0"
                             android:textSize="35dp"
