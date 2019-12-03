@@ -1052,18 +1052,17 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         // **** BG value ****
         if (lastBG != null) {
             int color = MainApp.gc(R.color.inrange);
-            Drawable drawable = bgView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
             if (lastBG.valueToUnits(units) < lowLine)
                 color = MainApp.gc(R.color.low);
-            else if (lastBG.valueToUnits(units) > highLine)
+            Drawable drawable = bgView.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
+            if (lastBG.valueToUnits(units) > highLine)
                 color = MainApp.gc(R.color.high);
-
+            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             bgView.setText(lastBG.valueToUnitsToString(units));
             arrowView.setText(lastBG.directionToSymbol());
             bgView.setTextColor(color);
             arrowView.setTextColor(color);
-
             GlucoseStatus glucoseStatus = GlucoseStatus.getGlucoseStatusData();
             if (glucoseStatus != null) {
                 if (deltaView != null)
@@ -1129,18 +1128,6 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             apsModeView.setVisibility(View.GONE);
         }
 
-        // active profil
-        activeProfileView.setText(ProfileFunctions.getInstance().getProfileName());
-        if (profile.getPercentage() != 100 || profile.getTimeshift() != 0) {
-            Drawable drawable = activeProfileView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
-            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
-        } else {
-            Drawable drawable = activeProfileView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
-            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
-        }
-
         // temp target
         TempTarget tempTarget = TreatmentsPlugin.getPlugin().getTempTargetFromHistory();
         if (tempTarget != null) {
@@ -1157,7 +1144,17 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
         }
 
-
+        // active profil
+        activeProfileView.setText(ProfileFunctions.getInstance().getProfileName());
+        if (profile.getPercentage() != 100 || profile.getTimeshift() != 0) {
+            Drawable drawable = activeProfileView.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
+            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
+        } else {
+            Drawable drawable = activeProfileView.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
+            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
+        }
 
         // **** Temp button ****
         if (acceptTempLayout != null) {
