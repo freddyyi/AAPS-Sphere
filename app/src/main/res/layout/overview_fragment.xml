@@ -146,48 +146,70 @@
                             android:text="→"
                             android:textSize="30sp"
                             android:textStyle="bold" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="85dp"
-                            android:layout_gravity="top"
-                            android:layout_marginTop="20dp"
-                            android:gravity="top"
-                            android:orientation="vertical">
-
-
-                            <TextView
-                                android:id="@+id/overview_timeago"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="top|center"
-                                android:layout_marginTop="0dp"
-                                android:background="@drawable/white_trans_bg"
-                                android:gravity="center_vertical|center_horizontal"
-                                android:paddingRight="5dp"
-                                android:textColor="#FFFFFF"
-                                android:textSize="16sp" />
+<!-- Timeago and Delta -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="5dp"
+                        android:gravity="top"
+                        android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="top"
-                                android:layout_marginTop="8dp"
-                                android:gravity="top"
-                                android:orientation="vertical">
+                                android:orientation="horizontal">
 
 
-                                <TextView
-                                    android:id="@+id/overview_delta"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="top|center"
-                                    android:layout_marginTop="0dp"
-                                    android:background="@drawable/white_trans_bg"
-                                    android:gravity="center_vertical|center_horizontal"
-                                    android:paddingRight="5dp"
-                                    android:textColor="#FFFFFF"
-                                    android:textSize="16sp" />
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="top|center"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/ic_reminder">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/overview_timeago"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="top|center"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/ic_ball_cyan"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:paddingRight="5dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+                            </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="top|center"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/icon_calibration"></ImageView>
+
+
+                             <TextView
+                                 android:id="@+id/overview_delta"
+                                 android:layout_width="40dp"
+                                 android:layout_height="40dp"
+                                 android:layout_gravity="top|center"
+                                 android:layout_marginTop="5dp"
+                                 android:layout_marginLeft="10dp"
+                                 android:background="@drawable/ic_ball_cyan"
+                                 android:gravity="center_vertical|center_horizontal"
+                                 android:paddingRight="5dp"
+                                 android:textColor="#FFFFFF"
+                                 android:textSize="16sp" />
 
                                 <!--                               <TextView
                                     android:id="@+id/overview_avgdelta"
@@ -196,9 +218,9 @@
                                     android:layout_marginLeft="10dp"
                                     android:textSize="15sp" /> -->
 
-                            </LinearLayout>
+                         </LinearLayout>
 
-                        </LinearLayout>
+                     </LinearLayout>
 
                     </LinearLayout>
 
