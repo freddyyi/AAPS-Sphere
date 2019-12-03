@@ -164,20 +164,19 @@
 
 
                             <ImageView
-                                android:layout_width="23dp"
-                                android:layout_height="23dp"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
                                 android:layout_gravity="top|center"
-                                android:layout_marginStart="8dp"
+                                android:layout_marginStart="10dp"
                                 android:layout_marginTop="7dp"
-                                android:background="@drawable/ic_reminder">
-                            </ImageView>
+                                android:background="@drawable/ic_reminder"></ImageView>
 
                             <TextView
                                 android:id="@+id/overview_timeago"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="top|center"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginLeft="12dp"
                                 android:layout_marginTop="0dp"
                                 android:autoSizeMaxTextSize="16sp"
                                 android:background="@drawable/ic_ball_lightgrey"
@@ -192,13 +191,12 @@
                             android:orientation="horizontal">
 
                             <ImageView
-                                android:layout_width="23dp"
-                                android:layout_height="23dp"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
                                 android:layout_gravity="top|center"
                                 android:layout_marginStart="8dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/icon_xdrip">
-                            </ImageView>
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/icon_xdrip"></ImageView>
 
 
                             <TextView
