@@ -362,7 +362,7 @@
     <string name="button2">Schaltfläche 2</string>
     <string name="button3">Schaltfläche 3</string>
     <string name="units">Einheiten:</string>
-    <string name="mgdl">mg/dl</string>
+    <string name="mgdl"></string>
     <string name="mmol">mmol/l</string>
     <string name="dia">DIA:</string>
     <string name="target_range">Zielbereich:</string>
