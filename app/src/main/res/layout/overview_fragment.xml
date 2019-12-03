@@ -132,7 +132,7 @@
                             android:background="@drawable/bg_pille_top"
                             android:gravity="center_vertical|center_horizontal"
                             android:text="00.0"
-                            android:textSize="35dp"
+                            android:textSize="30dp"
                             android:textStyle="bold" />
 
                         <TextView
