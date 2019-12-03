@@ -1149,7 +1149,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
         } else {
             Drawable drawable = activeProfileView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0x00000000, PorterDuff.Mode.SRC_OUT));
+            drawable.setColorFilter(new PorterDuffColorFilter(0x90000000, PorterDuff.Mode.SRC_OUT));
             activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
         }
 
