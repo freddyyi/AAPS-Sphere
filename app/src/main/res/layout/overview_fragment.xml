@@ -179,7 +179,6 @@
                                 android:layout_marginLeft="10dp"
                                 android:background="@drawable/ic_ball_cyan"
                                 android:gravity="center_vertical|center_horizontal"
-                                android:paddingRight="5dp"
                                 android:textColor="#FFFFFF"
                                 android:autoSizeMaxTextSize="16sp" />
                             </LinearLayout>
@@ -209,7 +208,6 @@
                                  android:layout_marginLeft="10dp"
                                  android:background="@drawable/ic_ball_cyan"
                                  android:gravity="center_vertical|center_horizontal"
-                                 android:paddingRight="5dp"
                                  android:textColor="#FFFFFF"
                                  android:autoSizeMaxTextSize="16sp" />
 
