@@ -116,7 +116,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="220dp"
+                        android:layout_width="240dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal">
@@ -241,12 +241,13 @@
                             </ImageView>
 
                             <ImageView
-                                android:layout_width="32dp"
-                                android:layout_height="32dp"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="10dp"
                                 android:background="@drawable/ic_reminder">
+
                             </ImageView>
 
                             <ImageView
