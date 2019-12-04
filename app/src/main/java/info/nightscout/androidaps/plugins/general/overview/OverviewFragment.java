@@ -1313,7 +1313,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         if (timeAgoView != null)
             timeAgoView.setText(DateUtil.minAgo(lastBG.date));
         if (timeAgoShortView != null)
-            timeAgoShortView.setText( DateUtil.minAgoShort(lastBG.date) + "’");
+            timeAgoShortView.setText( DateUtil.minAgoShort(lastBG.date) + "′");
 
         // iob
         TreatmentsPlugin.getPlugin().updateTotalIOBTreatments();
