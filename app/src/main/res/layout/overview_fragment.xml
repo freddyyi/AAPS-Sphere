@@ -150,17 +150,16 @@
 <!--  IOB, COB, AS, BAS und Pumpe -->
                     <LinearLayout
                         android:layout_width="380dp"
-                        android:layout_height="95dp"
+                        android:layout_height="85dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="55dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:orientation="horizontal"
-                            android:paddingBottom="3dp">
+                            android:orientation="horizontal">
 
 
                             <TextView
@@ -168,7 +167,7 @@
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:layout_marginStart="5dp"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginTop="10dp"
                                 android:autoSizeMaxTextSize="16sp"
                                 android:background="@drawable/ic_ball_rose"
                                 android:gravity="center"
@@ -180,7 +179,7 @@
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:layout_marginStart="5dp"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginTop="10dp"
                                 android:autoSizeMaxTextSize="16sp"
                                 android:background="@drawable/ic_ball_grey"
                                 android:gravity="center"
@@ -192,7 +191,7 @@
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:layout_marginStart="5dp"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginTop="10dp"
                                 android:autoSizeMaxTextSize="16sp"
                                 android:background="@drawable/ic_ball_cyan"
                                 android:gravity="center"
@@ -203,8 +202,8 @@
                                 android:id="@+id/overview_cob"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
                                 android:autoSizeMaxTextSize="16sp"
                                 android:background="@drawable/ic_ball_amber"
                                 android:gravity="center"
@@ -216,8 +215,8 @@
                                 android:id="@+id/overview_basebasal"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="10dp"
                                 android:autoSizeMaxTextSize="16sp"
                                 android:background="@drawable/ic_ball_teal"
                                 android:gravity="center"
@@ -229,52 +228,51 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="0"
                             android:orientation="horizontal">
 
                             <ImageView
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
                                 android:layout_gravity="start"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/insulin_2">
+                                android:layout_marginStart="12dp"
+                                android:background="@drawable/ic_delta">
+
                             </ImageView>
 
                             <ImageView
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
                                 android:layout_gravity="start"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="18dp"
                                 android:background="@drawable/clock">
 
                             </ImageView>
 
                             <ImageView
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
                                 android:layout_gravity="start"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/insulin_2">
+                                android:layout_marginStart="16dp"
+                                android:background="@drawable/ic_iob">
+
                             </ImageView>
 
                             <ImageView
-                                android:layout_width="32dp"
-                                android:layout_height="32dp"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="14dp"
-                                android:layout_marginBottom="5dp"
-                                android:background="@drawable/carb_2">
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_marginStart="16dp"
+                                android:background="@drawable/ic_carb">
+
                             </ImageView>
 
                             <ImageView
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
                                 android:layout_gravity="end"
-                                android:layout_marginStart="12dp"
-                                android:layout_marginTop="5dp"
-                                android:background="@drawable/icon_cp_bolus_correction">
+                                android:layout_marginStart="16dp"
+                                android:background="@drawable/ic_basalrate">
+
                             </ImageView>
 
                         </LinearLayout>
