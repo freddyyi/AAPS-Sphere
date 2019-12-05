@@ -494,7 +494,7 @@
                     android:id="@+id/overview_carbsbutton"
                     android:background="@drawable/bg_trans_complete"
                     android:layout_width="0px"
-                    android:layout_height="match_parent"
+                    android:layout_height="32px"
                     android:layout_marginTop="2dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
