@@ -125,6 +125,8 @@ public class GraphData {
                 new DoubleDataPoint(fromTime, lowLine, highLine),
                 new DoubleDataPoint(toTime, lowLine, highLine)
         };
+
+
         inRangeAreaSeries = new AreaGraphSeries<>(inRangeAreaDataPoints);
         inRangeAreaSeries.setColor(0);
         inRangeAreaSeries.setDrawBackground(true);
