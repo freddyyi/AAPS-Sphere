@@ -471,7 +471,7 @@
 
                 <info.nightscout.androidaps.utils.SingleClickButton
                     android:id="@+id/overview_insulinbutton"
-                    android:background="@drawable/insulin_2"
+                    android:background="@drawable/ic_iob"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
@@ -484,7 +484,7 @@
 
                 <info.nightscout.androidaps.utils.SingleClickButton
                     android:id="@+id/overview_carbsbutton"
-                    android:background="@drawable/carb_2"
+                    android:background="@drawable/ic_carb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
