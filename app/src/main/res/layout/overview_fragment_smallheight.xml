@@ -81,9 +81,6 @@
 
             </LinearLayout>
 
-
-
-
             <LinearLayout
                 android:id="@+id/overview_pumpstatuslayout"
                 android:layout_width="match_parent"
@@ -141,61 +138,19 @@
                     android:gravity="top"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/overview_timeago"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="0.5"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                    <TextView
-                        android:id="@+id/overview_delta"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="0.5"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <TextView
                         android:id="@+id/overview_avgdelta"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/overview_basallayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/overview_runningtemp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textStyle="normal|bold" />
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/overview_basebasal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
-
-            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/overview_statuslights"
