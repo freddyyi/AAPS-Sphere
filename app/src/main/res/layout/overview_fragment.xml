@@ -458,98 +458,91 @@
 
                 <info.nightscout.androidaps.utils.SingleClickButton
                     android:id="@+id/overview_treatmentbutton"
-                    android:background="@drawable/bg_trans_complete"
+                    android:background="@drawable/treatment_2"
                     android:layout_width="0px"
                     android:layout_height="match_parent"
                     android:layout_marginTop="2dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:layout_weight="0.5"
-                    android:drawableTop="@drawable/treatment_2"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:visibility="gone" />
 
                 <info.nightscout.androidaps.utils.SingleClickButton
                     android:id="@+id/overview_insulinbutton"
-                    android:background="@drawable/bg_trans_complete"
+                    android:background="@drawable/insulin_2"
                     android:layout_width="0px"
                     android:layout_height="match_parent"
                     android:layout_marginTop="2dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:layout_weight="0.5"
-                    android:drawableTop="@drawable/insulin_2"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:visibility="gone" />
 
                 <info.nightscout.androidaps.utils.SingleClickButton
                     android:id="@+id/overview_carbsbutton"
-                    android:background="@drawable/bg_trans_complete"
+                    android:background="@drawable/carb_2"
                     android:layout_width="0px"
                     android:layout_height="match_parent"
                     android:layout_marginTop="2dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:layout_weight="0.5"
-                    android:drawableTop="@drawable/carb_2"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:visibility="gone" />
 
                 <info.nightscout.androidaps.utils.SingleClickButton
                     android:id="@+id/overview_wizardbutton"
-                    android:background="@drawable/bg_trans_complete"
+                    android:background="@drawable/calculator_2"
                     android:layout_width="0px"
                     android:layout_height="match_parent"
                     android:layout_marginTop="2dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:layout_weight="0.5"
-                    android:drawableTop="@drawable/calculator_2"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:visibility="gone" />
 
                 <info.nightscout.androidaps.utils.SingleClickButton
                     android:id="@+id/overview_calibrationbutton"
-                    android:background="@drawable/bg_trans_complete"
+                    android:background="@drawable/blood_3"
                     android:layout_width="0px"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="4dp"
                     android:layout_marginTop="2dp"
                     android:layout_marginRight="4dp"
                     android:layout_weight="0.5"
-                    android:drawableTop="@drawable/blood_3"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:visibility="gone" />
 
                 <info.nightscout.androidaps.utils.SingleClickButton
                     android:id="@+id/overview_cgmbutton"
-                    android:background="@drawable/bg_trans_complete"
+                    android:background="@drawable/icon_xdrip"
                     android:layout_width="0px"
                     android:layout_height="match_parent"
                     android:layout_marginTop="2dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:layout_weight="0.5"
-                    android:drawableTop="@drawable/icon_xdrip"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:visibility="gone" />
 
                 <info.nightscout.androidaps.utils.SingleClickButton
                     android:id="@+id/overview_quickwizardbutton"
-                    android:background="@drawable/bg_trans_complete"
+                    android:background="@drawable/wizard_2"
                     android:layout_width="0px"
                     android:layout_height="match_parent"
                     android:layout_marginTop="2dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="4dp"
                     android:layout_weight="0.5"
-                    android:drawableTop="@drawable/wizard_2"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:visibility="gone" />
