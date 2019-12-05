@@ -1051,7 +1051,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         //Start with updating the BG as it is unaffected by loop.
         // **** BG value ****
         if (lastBG != null) {
-            int color = MainApp.gc(R.color.black);
+            int color = MainApp.gc(R.color.white);
             if (lastBG.valueToUnits(units) < lowLine)
                 color = MainApp.gc(R.color.low);
             else if (lastBG.valueToUnits(units) > highLine)
