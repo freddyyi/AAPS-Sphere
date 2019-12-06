@@ -149,16 +149,16 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="36dp"
                                 android:layout_weight="1"
                                 android:orientation="horizontal">
 
 
                                 <TextView
                                     android:id="@+id/overview_deltashort"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
-                                    android:layout_marginStart="5dp"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="0dp"
                                     android:layout_marginTop="10dp"
                                     android:autoSizeMaxTextSize="16sp"
                                     android:background="@drawable/ic_ball_rose"
@@ -168,9 +168,9 @@
 
                                 <TextView
                                     android:id="@+id/overview_timeagoshort"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
-                                    android:layout_marginStart="5dp"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="2dp"
                                     android:layout_marginTop="10dp"
                                     android:autoSizeMaxTextSize="16sp"
                                     android:background="@drawable/ic_ball_grey"
@@ -180,9 +180,9 @@
 
                                 <TextView
                                     android:id="@+id/overview_iob"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
-                                    android:layout_marginStart="5dp"
+                                    android:layout_width="38dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="2dp"
                                     android:layout_marginTop="10dp"
                                     android:autoSizeMaxTextSize="16sp"
                                     android:background="@drawable/ic_ball_cyan"
@@ -192,9 +192,9 @@
 
                                 <TextView
                                     android:id="@+id/overview_cob"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
-                                    android:layout_marginStart="5dp"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="2dp"
                                     android:layout_marginTop="10dp"
                                     android:autoSizeMaxTextSize="16sp"
                                     android:background="@drawable/ic_ball_amber"
@@ -205,9 +205,9 @@
 
                                 <TextView
                                     android:id="@+id/overview_basebasal"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
-                                    android:layout_marginStart="5dp"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="2dp"
                                     android:layout_marginTop="10dp"
                                     android:autoSizeMaxTextSize="16sp"
                                     android:background="@drawable/ic_ball_teal"
@@ -227,42 +227,42 @@
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_gravity="start"
-                                    android:layout_marginStart="12dp"
+                                    android:layout_marginStart="5dp"
                                     android:background="@drawable/ic_delta_48">
 
                                 </ImageView>
 
                                 <ImageView
-                                    android:layout_width="28dp"
-                                    android:layout_height="28dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
                                     android:layout_gravity="start"
-                                    android:layout_marginStart="18dp"
+                                    android:layout_marginStart="12dp"
                                     android:background="@drawable/ic_clock_48">
 
                                 </ImageView>
 
                                 <ImageView
-                                    android:layout_width="28dp"
-                                    android:layout_height="28dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
                                     android:layout_gravity="start"
-                                    android:layout_marginStart="17dp"
+                                    android:layout_marginStart="14dp"
                                     android:background="@drawable/ic_iob_48">
 
                                 </ImageView>
 
                                 <ImageView
-                                    android:layout_width="28dp"
-                                    android:layout_height="28dp"
-                                    android:layout_marginStart="17dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginStart="14dp"
                                     android:background="@drawable/ic_carb_48">
 
                                 </ImageView>
 
                                 <ImageView
-                                    android:layout_width="28dp"
-                                    android:layout_height="28dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
                                     android:layout_gravity="end"
-                                    android:layout_marginStart="15dp"
+                                    android:layout_marginStart="14dp"
                                     android:background="@drawable/ic_basalrate_48">
 
                                 </ImageView>
