@@ -53,7 +53,7 @@
                     android:layout_weight="0"
                     android:gravity="center_vertical"
                     android:scaleType="centerInside"
-                    android:src="@drawable/icon_cp_age_canula" />
+                    android:src="@drawable/icon_cp_age_insulin" />
 
                 <TextView
                     android:id="@+id/careportal_insulinage"
