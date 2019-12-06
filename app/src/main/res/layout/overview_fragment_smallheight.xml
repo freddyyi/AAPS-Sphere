@@ -150,58 +150,6 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="0"
-                                android:orientation="horizontal">
-
-                                <ImageView
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"
-                                    android:layout_gravity="start"
-                                    android:layout_marginStart="12dp"
-                                    android:background="@drawable/ic_delta_48">
-
-                                </ImageView>
-
-                                <ImageView
-                                    android:layout_width="28dp"
-                                    android:layout_height="28dp"
-                                    android:layout_gravity="start"
-                                    android:layout_marginStart="18dp"
-                                    android:background="@drawable/ic_clock_48">
-
-                                </ImageView>
-
-                                <ImageView
-                                    android:layout_width="28dp"
-                                    android:layout_height="28dp"
-                                    android:layout_gravity="start"
-                                    android:layout_marginStart="17dp"
-                                    android:background="@drawable/ic_iob_48">
-
-                                </ImageView>
-
-                                <ImageView
-                                    android:layout_width="28dp"
-                                    android:layout_height="28dp"
-                                    android:layout_marginStart="17dp"
-                                    android:background="@drawable/ic_carb_48">
-
-                                </ImageView>
-
-                                <ImageView
-                                    android:layout_width="28dp"
-                                    android:layout_height="28dp"
-                                    android:layout_gravity="end"
-                                    android:layout_marginStart="15dp"
-                                    android:background="@drawable/ic_basalrate_48">
-
-                                </ImageView>
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:orientation="horizontal">
 
@@ -268,6 +216,59 @@
                                     android:textColor="@android:color/white" />
 
                             </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="start"
+                                    android:layout_marginStart="12dp"
+                                    android:background="@drawable/ic_delta_48">
+
+                                </ImageView>
+
+                                <ImageView
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_gravity="start"
+                                    android:layout_marginStart="18dp"
+                                    android:background="@drawable/ic_clock_48">
+
+                                </ImageView>
+
+                                <ImageView
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_gravity="start"
+                                    android:layout_marginStart="17dp"
+                                    android:background="@drawable/ic_iob_48">
+
+                                </ImageView>
+
+                                <ImageView
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginStart="17dp"
+                                    android:background="@drawable/ic_carb_48">
+
+                                </ImageView>
+
+                                <ImageView
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginStart="15dp"
+                                    android:background="@drawable/ic_basalrate_48">
+
+                                </ImageView>
+
+                            </LinearLayout>
+
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -278,7 +279,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -320,7 +322,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -340,7 +343,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/overview_canulaage"
@@ -398,53 +402,15 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/mdtp_white" />
 
-            <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
+            <com.google.android.flexbox.FlexboxLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 app:alignContent="center"
                 app:alignItems="center"
                 app:flexDirection="row"
                 app:flexWrap="wrap"
                 app:justifyContent="space_around">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/iob"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text=":" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:text="@string/cob" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text=":" />
-
-
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
