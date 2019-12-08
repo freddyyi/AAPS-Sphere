@@ -1221,7 +1221,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         if (activeTemp != null) {
             baseBasalView.setTextColor(MainApp.gc(R.color.color_white));
         } else {
-            baseBasalView.setTextColor(Color.WHITE);
+            baseBasalView.setTextColor(Color.BLACK);
 
         }
 
