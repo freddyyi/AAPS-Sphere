@@ -164,7 +164,7 @@
                                     android:background="@drawable/ic_ball_rose"
                                     android:gravity="center"
                                     android:text=""
-                                    android:textColor="@android:color/white" />
+                                    android:textColor="@android:color/black" />
 
                                 <TextView
                                     android:id="@+id/overview_timeagoshort"
@@ -188,7 +188,7 @@
                                     android:background="@drawable/ic_ball_cyan"
                                     android:gravity="center"
                                     android:text=""
-                                    android:textColor="@android:color/white" />
+                                    android:textColor="@android:color/black" />
 
                                 <TextView
                                     android:id="@+id/overview_cob"
@@ -200,7 +200,7 @@
                                     android:background="@drawable/ic_ball_amber"
                                     android:gravity="center"
                                     android:text=""
-                                    android:textColor="@android:color/white" />
+                                    android:textColor="@android:color/black" />
 
 
                                 <TextView
@@ -213,7 +213,7 @@
                                     android:background="@drawable/ic_ball_teal"
                                     android:gravity="center"
                                     android:text=""
-                                    android:textColor="@android:color/white" />
+                                    android:textColor="@android:color/black" />
 
                             </LinearLayout>
 
