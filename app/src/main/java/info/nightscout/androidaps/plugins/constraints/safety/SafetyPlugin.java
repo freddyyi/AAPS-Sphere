@@ -117,7 +117,7 @@ public class SafetyPlugin extends PluginBase implements ConstraintsInterface {
                 value.set(false, MainApp.gs(R.string.smbalwaysdisabled), this);
         }
         return value;
-    }
+    }*/
 
     @Override
     public Constraint<Double> applyBasalConstraints(Constraint<Double> absoluteRate, Profile profile) {
