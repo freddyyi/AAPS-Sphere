@@ -206,7 +206,7 @@
                                 android:layout_height="40dp"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="10dp"
-                                android:autoSizeMaxTextSize="16sp"
+                                android:autoSizeTextType="uniform"
                                 android:background="@drawable/ic_ball_grey"
                                 android:gravity="center"
                                 android:text=""
