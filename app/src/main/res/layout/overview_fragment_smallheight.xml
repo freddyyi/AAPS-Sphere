@@ -123,6 +123,7 @@
                         android:background="@drawable/bg_bg"
                         android:gravity="center_vertical|center_horizontal"
                         android:text="00.0"
+                        android:textColor="@color/white"
                         android:textSize="30sp"
                         android:textStyle="bold" />
 
