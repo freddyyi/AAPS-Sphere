@@ -1327,7 +1327,7 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         bgView.setPaintFlags(flag);
 
         if (timeAgoView != null)
-            timeAgoView.setText(DateUtil.minAgo(lastBG.date));
+            timeAgoView.setText(DateUtil.minAgo(lastBG.date) + "′");
         if (timeAgoShortView != null)
             timeAgoShortView.setText( DateUtil.minAgoShort(lastBG.date) + "′");
 
