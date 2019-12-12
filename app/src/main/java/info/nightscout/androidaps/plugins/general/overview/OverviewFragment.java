@@ -1154,7 +1154,6 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
             tempTargetView.setText(Profile.toTargetRangeString(profile.getTargetLowMgdl(), profile.getTargetHighMgdl(), Constants.MGDL, units));
             tempTargetView.setVisibility(View.VISIBLE);
             tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
-            tempTargetView.setBackgroundColor(MainApp.gc(R.color.ribbonDefault));
         }
 
 
