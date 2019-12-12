@@ -763,36 +763,36 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
                 pvd.show(manager, "ProfileViewDialog");
         } else if (item.getTitle().equals(MainApp.gs(R.string.eatingsoon))) {
             DefaultValueHelper defHelper = new DefaultValueHelper();
-            double target = defHelper.determineEatingSoonTT(profile.getUnits());
+            double target = Profile.toMgdl(defHelper.determineEatingSoonTT(), ProfileFunctions.getSystemUnits());
             TempTarget tempTarget = new TempTarget()
                     .date(System.currentTimeMillis())
                     .duration(defHelper.determineEatingSoonTTDuration())
                     .reason(MainApp.gs(R.string.eatingsoon))
                     .source(Source.USER)
-                    .low(Profile.toMgdl(target, profile.getUnits()))
-                    .high(Profile.toMgdl(target, profile.getUnits()));
+                    .low(target)
+                    .high(target);
             TreatmentsPlugin.getPlugin().addToHistoryTempTarget(tempTarget);
         } else if (item.getTitle().equals(MainApp.gs(R.string.activity))) {
             DefaultValueHelper defHelper = new DefaultValueHelper();
-            double target = defHelper.determineActivityTT(profile.getUnits());
+            double target = Profile.toMgdl(defHelper.determineActivityTT(), ProfileFunctions.getSystemUnits());
             TempTarget tempTarget = new TempTarget()
                     .date(now())
                     .duration(defHelper.determineActivityTTDuration())
                     .reason(MainApp.gs(R.string.activity))
                     .source(Source.USER)
-                    .low(Profile.toMgdl(target, profile.getUnits()))
-                    .high(Profile.toMgdl(target, profile.getUnits()));
+                    .low(target)
+                    .high(target);
             TreatmentsPlugin.getPlugin().addToHistoryTempTarget(tempTarget);
         } else if (item.getTitle().equals(MainApp.gs(R.string.hypo))) {
             DefaultValueHelper defHelper = new DefaultValueHelper();
-            double target = defHelper.determineHypoTT(profile.getUnits());
+            double target = Profile.toMgdl(defHelper.determineHypoTT(), ProfileFunctions.getSystemUnits());
             TempTarget tempTarget = new TempTarget()
                     .date(now())
                     .duration(defHelper.determineHypoTTDuration())
                     .reason(MainApp.gs(R.string.hypo))
                     .source(Source.USER)
-                    .low(Profile.toMgdl(target, profile.getUnits()))
-                    .high(Profile.toMgdl(target, profile.getUnits()));
+                    .low(target)
+                    .high(target);
             TreatmentsPlugin.getPlugin().addToHistoryTempTarget(tempTarget);
         } else if (item.getTitle().equals(MainApp.gs(R.string.custom))) {
             NewNSTreatmentDialog newTTDialog = new NewNSTreatmentDialog();
@@ -817,7 +817,6 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
     public void onClick(View v) {
         boolean xdrip = SourceXdripPlugin.getPlugin().isEnabled(PluginType.BGSOURCE);
         boolean dexcom = SourceDexcomPlugin.INSTANCE.isEnabled(PluginType.BGSOURCE);
-        String units = ProfileFunctions.getInstance().getProfileUnits();
 
         FragmentManager manager = getFragmentManager();
         // try to fix  https://fabric.io/nightscout3/android/apps/info.nightscout.androidaps/issues/5aca7a1536c7b23527eb4be7?time=last-seven-days
@@ -1044,9 +1043,9 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         final Profile profile = ProfileFunctions.getInstance().getProfile();
         final String profileName = ProfileFunctions.getInstance().getProfileName();
 
-        final String units = profile.getUnits();
-        final double lowLine = OverviewPlugin.INSTANCE.determineLowLine(units);
-        final double highLine = OverviewPlugin.INSTANCE.determineHighLine(units);
+        final String units = ProfileFunctions.getSystemUnits();
+        final double lowLine = OverviewPlugin.INSTANCE.determineLowLine();
+        final double highLine = OverviewPlugin.INSTANCE.determineHighLine();
 
         //Start with updating the BG as it is unaffected by loop.
         // **** BG value ****
@@ -1152,22 +1151,12 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
         } else {
             Drawable drawable = tempTargetView.getBackground();
             drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
-            tempTargetView.setText(Profile.toTargetRangeString(profile.getTargetLow(), profile.getTargetHigh(), units, units));
+            tempTargetView.setText(Profile.toTargetRangeString(profile.getTargetLowMgdl(), profile.getTargetHighMgdl(), Constants.MGDL, units));
             tempTargetView.setVisibility(View.VISIBLE);
             tempTargetView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
+            tempTargetView.setBackgroundColor(MainApp.gc(R.color.ribbonDefault));
         }
 
-        // active profil
-        activeProfileView.setText(ProfileFunctions.getInstance().getProfileName());
-        if (profile.getPercentage() != 100 || profile.getTimeshift() != 0) {
-            Drawable drawable = activeProfileView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
-            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
-        } else {
-            Drawable drawable = activeProfileView.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
-            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
-        }
 
         // **** Temp button ****
         if (acceptTempLayout != null) {
@@ -1265,6 +1254,17 @@ public class OverviewFragment extends Fragment implements View.OnClickListener, 
                 extendedBolusView.setVisibility(View.VISIBLE);
         }
 
+        // active profil
+        activeProfileView.setText(ProfileFunctions.getInstance().getProfileNameWithDuration());
+        if (profile.getPercentage() != 100 || profile.getTimeshift() != 0) {
+            Drawable drawable = activeProfileView.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
+            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextWarning));
+        } else {
+            Drawable drawable = activeProfileView.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
+            activeProfileView.setTextColor(MainApp.gc(R.color.ribbonTextDefault));
+        }
 
 
         // QuickWizard button
