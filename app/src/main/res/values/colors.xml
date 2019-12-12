@@ -18,27 +18,27 @@
     <color name="inrange">#FFFFFF</color> <!-- Farbe des angezeigten Wertes im normalen Bereich des Graphen -->
     <color name="low">#f0a30a</color> <!-- Farbe des angezeigten Wertes im hohen Bereich. Auch die Punktefarbe im Graphen -->
     <color name="high">#f0a30a</color> <!-- Farbe des angezeigten Wertes im tiefen Bereich. Auch die Punktefarbe im Graphen. Farbe im CarePortal als erster Hinweis-->
-    <color name="color_white">#FFFFFF</color> <!-- Farbe des BG Trend Pfeiles -->
     <color name="actionsConfirm">#FFFF00</color>
     <color name="listdelimiter">#505050</color> <!-- Hintergrundfarbe fuer verschiedene widgets -->
-    <color name="tabBgColor">#f0003f59</color>
     <color name="tabBgColorSelected">#00a3e8</color>
     <color name="deviations">#FF0000</color>
     <color name="cobAlert">#7484E2</color>
     <color name="inrangebackground">#20FFFFFF</color> <!-- Grafikbereich fuer die gewaehlten BG Werte hoch und tief im Graphen -->
-    <color name="inrange_bg">#FFFFFF</color> <!-- Schriftfarbe der BG Anzeige oben links -->
     <color name="basebasal">#00a3e8</color>
     <color name="tempbasal">#149baf</color> <!-- Farbe TEMP Basal im Graphen -->
     <color name="graphgrid">#00000000</color> <!-- Farbe der Graphen Raster Linien -->
     <color name="colorLightGray">#d8d8d8</color>
     <color name="warning">#f0a30a</color>
 
+    <color name="error_background">#66FC0000</color>
+    <color name="ok_background">#323232</color>
+
     <color name="defaultbackground">#424242</color> <!-- Default 424242 -->
     <color name="defaulttext">#FFFFFF</color> <!-- 'BBBBBB -->
 
     <color name="tempTargetBackground">#FFFFFF</color>
     <color name="tempTargetConfirmation">#FFFFFF</color>
-    <color name="tempTargetDisabledBackground">#303F9F</color>
+
 
 
     <color name="colorPrimary">#222222</color>
@@ -51,12 +51,9 @@
     <color name="cardObjectiveText">#779ECB</color>
 
     <color name="linearBlockBackground">#3e3d3d</color> <!-- Default 3e3d3d -->
-    <color name="configBuilderSelectedBackground">#262525</color>
-
- <color name="colorAcceptTempButton">#FFFFFF</color> <!-- Die Schrift Farbe bei Einblendung des Temporären Basal Vorschlages im Open Loop -->
 
     <!-- Schaltflächen Schrift Farbe unten -->
-
+    <color name="colorAcceptTempButton">#FFFFFF</color> <!-- Die Schrift Farbe bei Einblendung des Temporären Basal Vorschlages im Open Loop -->
     <color name="colorTreatmentButton">#FFFFFF</color> <!--  Auch die Farbe fuer die Schrift der Button auf der Wear Seite -->
     <color name="colorTreatmentButton_2">#00000000</color>
     <color name="colorInsulinButton">#00000000</color>
@@ -64,17 +61,13 @@
     <color name="colorCalibrationButton">#00000000</color>
     <color name="colorCalculatorButton">#00000000</color>
     <color name="colorQuickWizardButton">#00000000</color>
-
     <color name="colorSetTempButton">#FFFFFF</color>
     <color name="colorSetExtendedButton">#FFFFFF</color>
     <color name="colorProfileSwitchButton">#FFFFFF</color>
 
     <color name="colorScheduled">#de7550</color>
     <color name="colorActive">#25912e</color>
-
-    <color name="loopenabled">#47c8ff</color>
-    <color name="loopdisabled">#f0a30a</color>
-    <color name="looppumpsuspended">#f0a30a</color>
+    
 <!-- Eingeblendete Informationen oben -->
     <color name="notificationAnnouncement">#f0a30a</color>
     <color name="notificationUrgent">#f0a30a</color>   <!-- Update dringend verfüegbar ganz oben -->
