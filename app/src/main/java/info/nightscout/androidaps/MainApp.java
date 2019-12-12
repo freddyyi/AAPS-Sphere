@@ -51,6 +51,7 @@ import info.nightscout.androidaps.plugins.general.nsclient.receivers.DBAccessRec
 import info.nightscout.androidaps.plugins.general.overview.OverviewPlugin;
 import info.nightscout.androidaps.plugins.general.persistentNotification.PersistentNotificationPlugin;
 import info.nightscout.androidaps.plugins.general.smsCommunicator.SmsCommunicatorPlugin;
+import info.nightscout.androidaps.utils.ActivityMonitor;
 import info.nightscout.androidaps.plugins.general.wear.WearPlugin;
 import info.nightscout.androidaps.plugins.general.xdripStatusline.StatuslinePlugin;
 import info.nightscout.androidaps.plugins.insulin.InsulinOrefFreePeakPlugin;
@@ -59,7 +60,6 @@ import info.nightscout.androidaps.plugins.insulin.InsulinOrefUltraRapidActingPlu
 import info.nightscout.androidaps.plugins.iob.iobCobCalculator.IobCobCalculatorPlugin;
 import info.nightscout.androidaps.plugins.profile.local.LocalProfilePlugin;
 import info.nightscout.androidaps.plugins.profile.ns.NSProfilePlugin;
-import info.nightscout.androidaps.plugins.profile.simple.SimpleProfilePlugin;
 import info.nightscout.androidaps.plugins.pump.combo.ComboPlugin;
 import info.nightscout.androidaps.plugins.pump.danaR.DanaRPlugin;
 import info.nightscout.androidaps.plugins.pump.danaRKorean.DanaRKoreanPlugin;
@@ -129,7 +129,14 @@ public class MainApp extends Application {
         sConstraintsChecker = new ConstraintChecker();
         sDatabaseHelper = OpenHelperManager.getHelper(sInstance, DatabaseHelper.class);
 
-        Thread.setDefaultUncaughtExceptionHandler((thread, ex) -> log.error("Uncaught exception crashing app", ex));
+        Thread.setDefaultUncaughtExceptionHandler((thread, ex) -> {
+            if (ex instanceof InternalError) {
+                // usually the app trying to spawn a thread while being killed
+                return;
+            }
+
+            log.error("Uncaught exception crashing app", ex);
+        });
 
         try {
             if (FabricPrivacy.fabricEnabled()) {
@@ -138,6 +145,8 @@ public class MainApp extends Application {
         } catch (Exception e) {
             log.error("Error with Fabric init! " + e);
         }
+
+        registerActivityLifecycleCallbacks(ActivityMonitor.INSTANCE);
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         mFirebaseAnalytics.setAnalyticsCollectionEnabled(!Boolean.getBoolean("disableFirebase"));
@@ -188,8 +197,7 @@ public class MainApp extends Application {
             if (Config.APS) pluginsList.add(OpenAPSAMAPlugin.getPlugin());
             if (Config.APS) pluginsList.add(OpenAPSSMBPlugin.getPlugin());
             pluginsList.add(NSProfilePlugin.getPlugin());
-            if (!Config.NSCLIENT) pluginsList.add(SimpleProfilePlugin.getPlugin());
-            if (!Config.NSCLIENT) pluginsList.add(LocalProfilePlugin.getPlugin());
+            if (!Config.NSCLIENT) pluginsList.add(LocalProfilePlugin.INSTANCE);
             pluginsList.add(TreatmentsPlugin.getPlugin());
             if (!Config.NSCLIENT) pluginsList.add(SafetyPlugin.getPlugin());
             if (!Config.NSCLIENT) pluginsList.add(VersionCheckerPlugin.INSTANCE);
@@ -204,7 +212,7 @@ public class MainApp extends Application {
             pluginsList.add(SourcePoctechPlugin.getPlugin());
             pluginsList.add(SourceTomatoPlugin.getPlugin());
             pluginsList.add(SourceEversensePlugin.getPlugin());
-            if (!Config.NSCLIENT) pluginsList.add(SmsCommunicatorPlugin.getPlugin());
+            if (!Config.NSCLIENT) pluginsList.add(SmsCommunicatorPlugin.INSTANCE);
             pluginsList.add(FoodPlugin.getPlugin());
 
             pluginsList.add(WearPlugin.initPlugin(this));
@@ -425,7 +433,7 @@ public class MainApp extends Application {
         if (timeDateOrTZChangeReceiver != null) {
             unregisterReceiver(timeDateOrTZChangeReceiver);
         }
-
+        unregisterActivityLifecycleCallbacks(ActivityMonitor.INSTANCE);
     }
 
     public static int dpToPx(int dp) {
