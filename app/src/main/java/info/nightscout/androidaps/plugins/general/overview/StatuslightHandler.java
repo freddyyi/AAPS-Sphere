@@ -78,7 +78,6 @@ class StatuslightHandler {
                 (Double threshold) -> value <= threshold;
         if (value != invalid) {
             view.setText(text);
-            view.getBackground();
             if (check.apply(urgentThreshold)) {
                 Drawable drawable = applyStatuslight().getBackground();
                 drawable.setColorFilter(new PorterDuffColorFilter(0xffE0191D, PorterDuff.Mode.SRC_OUT));
