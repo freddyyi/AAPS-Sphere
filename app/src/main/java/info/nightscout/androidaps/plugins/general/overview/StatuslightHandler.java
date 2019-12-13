@@ -102,8 +102,8 @@ class StatuslightHandler {
 
     }
 
-    private void applyStatuslight() {
-        return ;
+    private View applyStatuslight() {
+        return null;
     }
 
     /**
