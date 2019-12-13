@@ -266,7 +266,7 @@ public class CareportalFragment extends Fragment implements View.OnClickListener
 
     }
 
-    public static void getBackgroundColor(CareportalEvent careportalEvent, double warnThreshold, double urgentThreshold) {
+    public static void determineBackgroundColor(CareportalEvent careportalEvent, double warnThreshold, double urgentThreshold) {
         if (careportalEvent.isOlderThan(urgentThreshold)) {
 //            return MainApp.gc(R.color.low);
             Drawable drawable = CareportalEvent.getBackground();
@@ -277,9 +277,10 @@ public class CareportalFragment extends Fragment implements View.OnClickListener
             drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
 //            return MainApp.gc(R.color.high);
         } else {
-//            return Color.WHITE;
+
             Drawable drawable = CareportalEvent.getBackground();
             drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
+            return ;
         }
 
     }
