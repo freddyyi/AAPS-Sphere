@@ -1,5 +1,8 @@
 package info.nightscout.androidaps.plugins.general.overview;
 
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
+import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.TextView;
 
@@ -18,6 +21,12 @@ import info.nightscout.androidaps.utils.SP;
 import info.nightscout.androidaps.utils.SetWarnColor;
 
 class StatuslightHandler {
+
+    TextView bgstatuslight;
+
+    public void setBgstatuslight(TextView bgstatuslight) {
+        this.bgstatuslight = bgstatuslight;
+    }
 
     /**
      * applies the statuslight subview on the overview fragement
@@ -75,7 +84,10 @@ class StatuslightHandler {
                 (Double threshold) -> value <= threshold;
         if (value != invalid) {
             view.setText(text);
-            if (check.apply(urgentThreshold)) {
+            Drawable drawable = bgstatuslight.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
+
+           if (check.apply(urgentThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.ribbonCritical));
             } else if (check.apply(warnThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.ribbonWarning));
