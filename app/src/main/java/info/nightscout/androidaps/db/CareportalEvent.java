@@ -1,6 +1,7 @@
 package info.nightscout.androidaps.db;
 
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
@@ -84,6 +85,11 @@ public class CareportalEvent implements DataPointWithLabelInterface, Interval {
         eventType = MBG;
         json = mbg.json;
     }
+
+    public static Drawable getBackground() {
+    return getBackground();
+    }
+
 
     public long getMillisecondsFromStart() {
         return System.currentTimeMillis() - date;

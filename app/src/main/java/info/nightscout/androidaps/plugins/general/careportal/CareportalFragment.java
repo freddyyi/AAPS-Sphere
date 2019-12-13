@@ -3,6 +3,9 @@ package info.nightscout.androidaps.plugins.general.careportal;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,6 +42,11 @@ public class CareportalFragment extends Fragment implements View.OnClickListener
     TextView cage;
     TextView sage;
     TextView pbage;
+    TextView cpstatsView;
+
+    public TextView getCpstatsView() {
+        return cpstatsView;
+    }
 
     View statsLayout;
     LinearLayout butonsLayout;
@@ -93,10 +101,13 @@ public class CareportalFragment extends Fragment implements View.OnClickListener
         view.findViewById(R.id.careportal_openapsoffline).setOnClickListener(this);
         view.findViewById(R.id.careportal_temporarytarget).setOnClickListener(this);
 
+
         iage = view.findViewById(R.id.careportal_insulinage);
         cage = view.findViewById(R.id.careportal_canulaage);
         sage = view.findViewById(R.id.careportal_sensorage);
         pbage = view.findViewById(R.id.careportal_pbage);
+        pbage = view.findViewById(R.id.careportal_pbage);
+
 
         statsLayout = view.findViewById(R.id.careportal_stats);
 
@@ -251,6 +262,24 @@ public class CareportalFragment extends Fragment implements View.OnClickListener
             return MainApp.gc(R.color.high);
         } else {
             return Color.WHITE;
+        }
+
+    }
+
+    public static void getBackgroundColor(CareportalEvent careportalEvent, double warnThreshold, double urgentThreshold) {
+        if (careportalEvent.isOlderThan(urgentThreshold)) {
+//            return MainApp.gc(R.color.low);
+            Drawable drawable = CareportalEvent.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
+
+        } else if (careportalEvent.isOlderThan(warnThreshold)) {
+            Drawable drawable = CareportalEvent.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
+//            return MainApp.gc(R.color.high);
+        } else {
+//            return Color.WHITE;
+            Drawable drawable = CareportalEvent.getBackground();
+            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
         }
 
     }
