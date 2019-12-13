@@ -310,7 +310,7 @@
                                 android:textColor="#FFFFFF"
                                 android:textSize="17sp" />
                         </LinearLayout> -->
-                        <!--  STATUSLIGHTS -->
+                        <!--  STATUSLIGHTS
                         <LinearLayout
                             android:id="@+id/overview_statuslights"
                             android:layout_width="match_parent"
@@ -393,7 +393,68 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
-<!-- Grafiken -->
+
+                <!--  STATUSLIGHTS -->
+<LinearLayout
+    android:id="@+id/overview_statuslights"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/overview_canulaage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:gravity="center"
+        android:paddingHorizontal="5dp"
+        android:text=""
+        android:textSize="15sp" />
+
+  <TextView
+      android:id="@+id/overview_insulinage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="3dp"
+      android:gravity="center"
+      android:paddingHorizontal="5dp"
+      android:text=""
+      android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/overview_reservoirlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:gravity="center"
+        android:paddingHorizontal="5dp"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/overview_sensorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:gravity="center"
+        android:paddingHorizontal="5dp"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/overview_batterylevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:gravity="center"
+        android:paddingHorizontal="5dp"
+        android:text=""
+        android:textSize="15sp" />
+
+</LinearLayout>
+
+                <!-- Grafiken -->
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
