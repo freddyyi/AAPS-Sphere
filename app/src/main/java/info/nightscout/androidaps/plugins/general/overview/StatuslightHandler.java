@@ -1,8 +1,5 @@
 package info.nightscout.androidaps.plugins.general.overview;
 
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffColorFilter;
-import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.TextView;
 
@@ -19,7 +16,6 @@ import info.nightscout.androidaps.plugins.pump.common.defs.PumpType;
 import info.nightscout.androidaps.utils.DecimalFormatter;
 import info.nightscout.androidaps.utils.SP;
 import info.nightscout.androidaps.utils.SetWarnColor;
-
 
 class StatuslightHandler {
 
@@ -79,31 +75,18 @@ class StatuslightHandler {
                 (Double threshold) -> value <= threshold;
         if (value != invalid) {
             view.setText(text);
-            view.getBackground();
             if (check.apply(urgentThreshold)) {
-                Drawable drawable = applyStatuslight().getBackground();
-                drawable.setColorFilter(new PorterDuffColorFilter(0xffE0191D, PorterDuff.Mode.SRC_OUT));
                 view.setTextColor(MainApp.gc(R.color.ribbonCritical));
-
-
             } else if (check.apply(warnThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.ribbonWarning));
-                Drawable drawable = applyStatuslight().getBackground();
-                drawable.setColorFilter(new PorterDuffColorFilter(0xffE0191D, PorterDuff.Mode.SRC_OUT));
             } else {
                 view.setTextColor(MainApp.gc(R.color.ribbonDefault));
-                Drawable drawable = applyStatuslight().getBackground();
-                drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             }
             view.setVisibility(View.VISIBLE);
         } else {
             view.setVisibility(View.GONE);
         }
 
-    }
-
-    private View applyStatuslight() {
-        return null;
     }
 
     /**
