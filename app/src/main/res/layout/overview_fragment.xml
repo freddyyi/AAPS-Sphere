@@ -310,7 +310,7 @@
                                 android:textColor="#FFFFFF"
                                 android:textSize="17sp" />
                         </LinearLayout> -->
-                        <!--  STATUSLIGHTS
+                        <!--  STATUSLIGHTS -->
                         <LinearLayout
                             android:id="@+id/overview_statuslights"
                             android:layout_width="match_parent"
