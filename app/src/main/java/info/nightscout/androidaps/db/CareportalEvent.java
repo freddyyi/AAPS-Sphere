@@ -86,11 +86,6 @@ public class CareportalEvent implements DataPointWithLabelInterface, Interval {
         json = mbg.json;
     }
 
-    public static Drawable getBackground() {
-    return getBackground();
-    }
-
-
     public long getMillisecondsFromStart() {
         return System.currentTimeMillis() - date;
     }

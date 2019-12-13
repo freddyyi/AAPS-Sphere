@@ -44,10 +44,6 @@ public class CareportalFragment extends Fragment implements View.OnClickListener
     TextView pbage;
     TextView cpstatsView;
 
-    public TextView getCpstatsView() {
-        return cpstatsView;
-    }
-
     View statsLayout;
     LinearLayout butonsLayout;
     View noProfileView;
@@ -262,25 +258,6 @@ public class CareportalFragment extends Fragment implements View.OnClickListener
             return MainApp.gc(R.color.high);
         } else {
             return Color.WHITE;
-        }
-
-    }
-
-    public static void determineBackgroundColor(CareportalEvent careportalEvent, double warnThreshold, double urgentThreshold) {
-        if (careportalEvent.isOlderThan(urgentThreshold)) {
-//            return MainApp.gc(R.color.low);
-            Drawable drawable = CareportalEvent.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
-
-        } else if (careportalEvent.isOlderThan(warnThreshold)) {
-            Drawable drawable = CareportalEvent.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
-//            return MainApp.gc(R.color.high);
-        } else {
-
-            Drawable drawable = CareportalEvent.getBackground();
-            drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
-            return ;
         }
 
     }
