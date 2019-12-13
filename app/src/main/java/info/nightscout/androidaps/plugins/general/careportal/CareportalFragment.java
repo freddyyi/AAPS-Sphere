@@ -42,7 +42,6 @@ public class CareportalFragment extends Fragment implements View.OnClickListener
     TextView cage;
     TextView sage;
     TextView pbage;
-    TextView cpstatsView;
 
     View statsLayout;
     LinearLayout butonsLayout;
