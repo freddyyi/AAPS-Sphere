@@ -3,9 +3,6 @@ package info.nightscout.androidaps.plugins.general.careportal;
 
 import android.app.Activity;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffColorFilter;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -260,6 +257,7 @@ public class CareportalFragment extends Fragment implements View.OnClickListener
         }
 
     }
+
 
     private static TextView handleAge(final TextView age, String eventType, double warnThreshold, double urgentThreshold) {
         return handleAge(age, "", eventType, warnThreshold, urgentThreshold, OverviewFragment.shorttextmode);
