@@ -406,7 +406,7 @@
                        android:id="@+id/overview_canulaage"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:layout_marginHorizontal="3dp"
+                       android:layout_marginHorizontal="1dp"
                        android:gravity="center"
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_katheter_25"
@@ -414,8 +414,7 @@
                        android:autoSizeMinTextSize="10sp"
                        android:autoSizeMaxTextSize="18sp"
                        android:autoSizeStepGranularity="2sp"
-                       android:text=""
-                       android:textSize="12sp" />
+                       android:text="" />
 
 <!--                <TextView
                      android:id="@+id/overview_insulinage"
@@ -429,14 +428,13 @@
                      android:autoSizeMinTextSize="12sp"
                      android:autoSizeMaxTextSize="18sp"
                      android:autoSizeStepGranularity="2sp"
-                     android:text=""
-                     android:textSize="14sp" /> -->
+                     android:text="" /> -->
 
                    <TextView
                        android:id="@+id/overview_reservoirlevel"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:layout_marginHorizontal="3dp"
+                       android:layout_marginHorizontal="1dp"
                        android:gravity="center"
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_cartridge_25"
@@ -444,14 +442,13 @@
                        android:autoSizeMinTextSize="10sp"
                        android:autoSizeMaxTextSize="18sp"
                        android:autoSizeStepGranularity="2sp"
-                       android:text=""
-                       android:textSize="12sp" />
+                       android:text="" />
 
                    <TextView
                        android:id="@+id/overview_sensorage"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:layout_marginHorizontal="3dp"
+                       android:layout_marginHorizontal="1dp"
                        android:gravity="center"
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_libre_sensor_25"
@@ -459,14 +456,13 @@
                        android:autoSizeMinTextSize="10sp"
                        android:autoSizeMaxTextSize="18sp"
                        android:autoSizeStepGranularity="2sp"
-                       android:text=""
-                       android:textSize="12sp" />
+                       android:text="" />
 
                    <TextView
                        android:id="@+id/overview_batterylevel"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:layout_marginHorizontal="3dp"
+                       android:layout_marginHorizontal="1dp"
                        android:gravity="center"
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_battery_25"
@@ -474,8 +470,7 @@
                        android:autoSizeMinTextSize="12sp"
                        android:autoSizeMaxTextSize="18sp"
                        android:autoSizeStepGranularity="2sp"
-                       android:text=""
-                       android:textSize="12sp" />
+                       android:text="" />
 
                </LinearLayout>
 
