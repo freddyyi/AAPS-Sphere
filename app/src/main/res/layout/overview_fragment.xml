@@ -410,11 +410,8 @@
                        android:gravity="center"
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_katheter_25"
-                       android:autoSizeTextType="uniform"
-                       android:autoSizeMinTextSize="10sp"
-                       android:autoSizeMaxTextSize="18sp"
-                       android:autoSizeStepGranularity="2sp"
-                       android:text="" />
+                       android:text=""
+                       android:textSize="12sp" />
 
 <!--                <TextView
                      android:id="@+id/overview_insulinage"
@@ -428,7 +425,8 @@
                      android:autoSizeMinTextSize="12sp"
                      android:autoSizeMaxTextSize="18sp"
                      android:autoSizeStepGranularity="2sp"
-                     android:text="" /> -->
+                     android:text=""
+                     android:textSize="14sp" /> -->
 
                    <TextView
                        android:id="@+id/overview_reservoirlevel"
@@ -438,11 +436,8 @@
                        android:gravity="center"
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_cartridge_25"
-                       android:autoSizeTextType="uniform"
-                       android:autoSizeMinTextSize="10sp"
-                       android:autoSizeMaxTextSize="18sp"
-                       android:autoSizeStepGranularity="2sp"
-                       android:text="" />
+                       android:text=""
+                       android:textSize="12sp" />
 
                    <TextView
                        android:id="@+id/overview_sensorage"
@@ -452,11 +447,8 @@
                        android:gravity="center"
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_libre_sensor_25"
-                       android:autoSizeTextType="uniform"
-                       android:autoSizeMinTextSize="10sp"
-                       android:autoSizeMaxTextSize="18sp"
-                       android:autoSizeStepGranularity="2sp"
-                       android:text="" />
+                       android:text=""
+                       android:textSize="12sp" />
 
                    <TextView
                        android:id="@+id/overview_batterylevel"
@@ -467,7 +459,7 @@
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_battery_25"
                        android:autoSizeTextType="uniform"
-                       android:autoSizeMinTextSize="12sp"
+                       android:autoSizeMinTextSize="10sp"
                        android:autoSizeMaxTextSize="18sp"
                        android:autoSizeStepGranularity="2sp"
                        android:text="" />
