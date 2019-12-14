@@ -412,7 +412,7 @@
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_katheter_25"
                        android:text=""
-                       android:textSize="15sp" />
+                       android:textSize="14sp" />
 
                 <TextView
                      android:id="@+id/overview_insulinage"
@@ -424,7 +424,7 @@
                      android:background="@drawable/bg_pille_top"
                      android:drawableLeft="@drawable/ic_insulin_25"
                      android:text=""
-                     android:textSize="15sp" />
+                     android:textSize="14sp" />
 
                    <TextView
                        android:id="@+id/overview_reservoirlevel"
@@ -436,7 +436,7 @@
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_cartridge_25"
                        android:text=""
-                       android:textSize="15sp" />
+                       android:textSize="14sp" />
 
                    <TextView
                        android:id="@+id/overview_sensorage"
@@ -448,7 +448,7 @@
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_libre_sensor_25"
                        android:text=""
-                       android:textSize="15sp" />
+                       android:textSize="14sp" />
 
                    <TextView
                        android:id="@+id/overview_batterylevel"
@@ -460,7 +460,7 @@
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/ic_battery_25"
                        android:text=""
-                       android:textSize="15sp" />
+                       android:textSize="14sp" />
 
                </LinearLayout>
 
