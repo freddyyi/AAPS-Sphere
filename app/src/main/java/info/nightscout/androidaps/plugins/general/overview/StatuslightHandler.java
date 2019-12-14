@@ -78,7 +78,7 @@ class StatuslightHandler {
                 (Double threshold) -> value <= threshold;
         if (value != invalid) {
             view.setText(text);
-            view.setBackgroundColor(MainApp.gc(R.color.transparent));
+//            view.setBackgroundColor(MainApp.gc(R.color.transparent));
             if (check.apply(urgentThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.color_white));
                 Drawable drawable = view.getBackground();
