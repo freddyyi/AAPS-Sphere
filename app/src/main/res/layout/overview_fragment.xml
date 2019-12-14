@@ -413,7 +413,7 @@
                        android:text=""
                        android:textSize="14sp" />
 
-                <TextView
+<!--                <TextView
                      android:id="@+id/overview_insulinage"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
@@ -422,7 +422,7 @@
                      android:background="@drawable/bg_pille_top"
                      android:drawableLeft="@drawable/ic_insulin_25"
                      android:text=""
-                     android:textSize="14sp" />
+                     android:textSize="14sp" /> -->
 
                    <TextView
                        android:id="@+id/overview_reservoirlevel"
