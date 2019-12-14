@@ -412,8 +412,8 @@
                        android:drawableLeft="@drawable/ic_katheter_25"
                        android:autoSizeTextType="uniform"
                        android:autoSizeMinTextSize="10sp"
-                       android:autoSizeMaxTextSize="14sp"
-                       android:autoSizeStepGranularity="2sp"
+                       android:autoSizeMaxTextSize="12sp"
+                       android:autoSizeStepGranularity="1sp"
                        android:text="" />
 
 <!--                <TextView
@@ -426,8 +426,8 @@
                      android:drawableLeft="@drawable/ic_insulin_25"
                      android:autoSizeTextType="uniform"
                      android:autoSizeMinTextSize="12sp"
-                     android:autoSizeMaxTextSize="14sp"
-                     android:autoSizeStepGranularity="2sp"
+                     android:autoSizeMaxTextSize="12sp"
+                     android:autoSizeStepGranularity="1sp"
                      android:text=""
                      android:textSize="14sp" /> -->
 
@@ -441,8 +441,8 @@
                        android:drawableLeft="@drawable/ic_cartridge_25"
                        android:autoSizeTextType="uniform"
                        android:autoSizeMinTextSize="10sp"
-                       android:autoSizeMaxTextSize="14sp"
-                       android:autoSizeStepGranularity="2sp"
+                       android:autoSizeMaxTextSize="12sp"
+                       android:autoSizeStepGranularity="1sp"
                        android:text="" />
 
                    <TextView
@@ -455,8 +455,8 @@
                        android:drawableLeft="@drawable/ic_libre_sensor_25"
                        android:autoSizeTextType="uniform"
                        android:autoSizeMinTextSize="10sp"
-                       android:autoSizeMaxTextSize="14sp"
-                       android:autoSizeStepGranularity="2sp"
+                       android:autoSizeMaxTextSize="12sp"
+                       android:autoSizeStepGranularity="1sp"
                        android:text="" />
 
                    <TextView
@@ -468,9 +468,9 @@
                        android:background="@drawable/bg_pille_status"
                        android:drawableLeft="@drawable/ic_battery_25"
                        android:autoSizeTextType="uniform"
-                       android:autoSizeMinTextSize="11sp"
-                       android:autoSizeMaxTextSize="14sp"
-                       android:autoSizeStepGranularity="2sp"
+                       android:autoSizeMinTextSize="10sp"
+                       android:autoSizeMaxTextSize="12sp"
+                       android:autoSizeStepGranularity="1sp"
                        android:text="" />
 
                </LinearLayout>
