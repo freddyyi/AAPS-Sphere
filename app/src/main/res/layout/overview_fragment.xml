@@ -410,6 +410,7 @@
                        android:gravity="center"
                        android:paddingHorizontal="5dp"
                        android:background="@drawable/bg_pille_top"
+                       android:drawableLeft="@drawable/icon_cp_age_canula"
                        android:text=""
                        android:textSize="15sp" />
 
@@ -421,6 +422,7 @@
                      android:gravity="center"
                      android:paddingHorizontal="5dp"
                      android:background="@drawable/bg_pille_top"
+                     android:drawableLeft="@drawable/insulin_2"
                      android:text=""
                      android:textSize="15sp" />
 
@@ -432,6 +434,7 @@
                        android:gravity="center"
                        android:paddingHorizontal="5dp"
                        android:background="@drawable/bg_pille_top"
+                       android:drawableLeft="@drawable/icon_cp_age_insulin"
                        android:text=""
                        android:textSize="15sp" />
 
@@ -443,6 +446,7 @@
                        android:gravity="center"
                        android:paddingHorizontal="5dp"
                        android:background="@drawable/bg_pille_top"
+                       android:drawableLeft="@drawable/icon_cp_age_sensor"
                        android:text=""
                        android:textSize="15sp" />
 
@@ -454,6 +458,7 @@
                        android:gravity="center"
                        android:paddingHorizontal="5dp"
                        android:background="@drawable/bg_pille_top"
+                       android:drawableLeft="@drawable/icon_cp_age_battery"
                        android:text=""
                        android:textSize="15sp" />
 
