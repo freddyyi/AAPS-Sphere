@@ -107,10 +107,10 @@ class StatuslightHandler {
                              TextView batteryView) {
         PumpInterface pump = ConfigBuilderPlugin.getPlugin().getActivePump();
 
-        handleAge("cage", CareportalEvent.SITECHANGE, cageView, "CAN ",
+        handleAge("cage", CareportalEvent.SITECHANGE, cageView, " ",
                 48, 72);
 
-        handleAge("iage", CareportalEvent.INSULINCHANGE, iageView, "INS ",
+        handleAge("iage", CareportalEvent.INSULINCHANGE, iageView, " ",
                 72, 96);
 
 
@@ -118,7 +118,7 @@ class StatuslightHandler {
                 R.string.key_statuslights_res_warning, 10.0,
                 reservoirView, "RES ", pump.getReservoirLevel());
 
-        handleAge("sage", CareportalEvent.SENSORCHANGE, sageView, "SEN ",
+        handleAge("sage", CareportalEvent.SENSORCHANGE, sageView, " ",
                 164, 166);
 
         if (pump.model() != PumpType.AccuChekCombo) {
@@ -126,7 +126,7 @@ class StatuslightHandler {
                     R.string.key_statuslights_bat_warning, 51.0,
                     batteryView, "BAT ", pump.getBatteryLevel());
         } else {
-            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "BAT ",
+            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, " ",
                     336, 240);
         }
     }
