@@ -1,5 +1,8 @@
 package info.nightscout.androidaps.plugins.general.overview;
 
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
+import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.TextView;
 
@@ -77,10 +80,19 @@ class StatuslightHandler {
             view.setText(text);
             if (check.apply(urgentThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.ribbonCritical));
+                view.setBackgroundColor(MainApp.gc(R.color.transparent));
+                Drawable drawable = view.getBackground();
+                drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
             } else if (check.apply(warnThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.ribbonWarning));
+                view.setBackgroundColor(MainApp.gc(R.color.transparent));
+                Drawable drawable = view.getBackground();
+                drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
             } else {
                 view.setTextColor(MainApp.gc(R.color.ribbonDefault));
+                view.setBackgroundColor(MainApp.gc(R.color.transparent));
+                Drawable drawable = view.getBackground();
+                drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             }
             view.setVisibility(View.VISIBLE);
         } else {
