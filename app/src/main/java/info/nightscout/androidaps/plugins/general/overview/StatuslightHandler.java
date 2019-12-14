@@ -33,7 +33,7 @@ class StatuslightHandler {
         applyStatuslight("iage", CareportalEvent.INSULINCHANGE, iageView, "INS", 72, 96);
 
         double reservoirLevel = pump.isInitialized() ? pump.getReservoirLevel() : -1;
-        applyStatuslightLevel(R.string.key_statuslights_res_critical, 10.0,
+        applyStatuslightLevel(R.string.key_statuslights_res_critical, 5.0,
                 R.string.key_statuslights_res_warning, 10.0, reservoirView, "RES", reservoirLevel);
 
         applyStatuslight("sage", CareportalEvent.SENSORCHANGE, sageView, "SEN", 164, 166);
@@ -115,8 +115,8 @@ class StatuslightHandler {
         handleAge("iage", CareportalEvent.INSULINCHANGE, iageView, "INS ",
                 72, 96);
 
-        handleLevel(R.string.key_statuslights_res_critical, 10.0,
-                R.string.key_statuslights_res_warning, 80.0,
+        handleLevel(R.string.key_statuslights_res_critical, 5.0,
+                R.string.key_statuslights_res_warning, 10.0,
                 reservoirView, "RES ", pump.getReservoirLevel());
 
         handleAge("sage", CareportalEvent.SENSORCHANGE, sageView, "SEN ",
