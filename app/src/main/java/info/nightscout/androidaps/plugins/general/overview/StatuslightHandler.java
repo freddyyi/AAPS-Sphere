@@ -78,19 +78,17 @@ class StatuslightHandler {
                 (Double threshold) -> value <= threshold;
         if (value != invalid) {
             view.setText(text);
+            view.setBackgroundColor(MainApp.gc(R.color.transparent));
             if (check.apply(urgentThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.color_white));
-                view.setBackgroundColor(MainApp.gc(R.color.transparent));
                 Drawable drawable = view.getBackground();
                 drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
             } else if (check.apply(warnThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.color_white));
-                view.setBackgroundColor(MainApp.gc(R.color.transparent));
                 Drawable drawable = view.getBackground();
                 drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
             } else {
                 view.setTextColor(MainApp.gc(R.color.color_white));
-                view.setBackgroundColor(MainApp.gc(R.color.transparent));
                 Drawable drawable = view.getBackground();
                 drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             }
