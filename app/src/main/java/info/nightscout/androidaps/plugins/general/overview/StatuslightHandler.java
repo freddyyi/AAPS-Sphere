@@ -112,9 +112,6 @@ class StatuslightHandler {
         handleAge("cage", CareportalEvent.SITECHANGE, cageView, "CAN ",
                 48, 72);
 
-        Drawable drawable = cageView.getBackground();
-        drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
-
         handleAge("iage", CareportalEvent.INSULINCHANGE, iageView, "INS ",
                 72, 96);
 
