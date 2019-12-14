@@ -34,7 +34,7 @@ class StatuslightHandler {
 
         double reservoirLevel = pump.isInitialized() ? pump.getReservoirLevel() : -1;
         applyStatuslightLevel(R.string.key_statuslights_res_critical, 10.0,
-                R.string.key_statuslights_res_warning, 80.0, reservoirView, "RES", reservoirLevel);
+                R.string.key_statuslights_res_warning, 10.0, reservoirView, "RES", reservoirLevel);
 
         applyStatuslight("sage", CareportalEvent.SENSORCHANGE, sageView, "SEN", 164, 166);
 
