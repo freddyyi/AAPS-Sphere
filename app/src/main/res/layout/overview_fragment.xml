@@ -398,7 +398,7 @@
                <LinearLayout
                    android:id="@+id/overview_statuslights"
                    android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
+                   android:layout_height="30dp"
                    android:gravity="center_horizontal"
                    android:orientation="horizontal">
 
@@ -412,7 +412,7 @@
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/icon_cp_age_canula"
                        android:text=""
-                       android:textSize="0sp" />
+                       android:textSize="15sp" />
 
                  <TextView
                      android:id="@+id/overview_insulinage"
@@ -424,7 +424,7 @@
                      android:background="@drawable/bg_pille_top"
                      android:drawableLeft="@drawable/insulin_2"
                      android:text=""
-                     android:textSize="0sp" />
+                     android:textSize="15sp" />
 
                    <TextView
                        android:id="@+id/overview_reservoirlevel"
@@ -436,7 +436,7 @@
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/icon_cp_age_insulin"
                        android:text=""
-                       android:textSize="0sp" />
+                       android:textSize="15sp" />
 
                    <TextView
                        android:id="@+id/overview_sensorage"
@@ -448,7 +448,7 @@
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/icon_cp_age_sensor"
                        android:text=""
-                       android:textSize="0sp" />
+                       android:textSize="15sp" />
 
                    <TextView
                        android:id="@+id/overview_batterylevel"
@@ -460,7 +460,7 @@
                        android:background="@drawable/bg_pille_top"
                        android:drawableLeft="@drawable/icon_cp_age_battery"
                        android:text=""
-                       android:textSize="0sp" />
+                       android:textSize="15sp" />
 
                </LinearLayout>
 
