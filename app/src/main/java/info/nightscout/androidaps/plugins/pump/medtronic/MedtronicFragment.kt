@@ -310,7 +310,7 @@ class MedtronicFragment : Fragment() {
 
         // reservoir
         medtronic_reservoir.text = MainApp.gs(R.string.reservoirvalue, pumpStatus.reservoirRemainingUnits, pumpStatus.reservoirFullUnits)
-        SetWarnColor.setColorInverse(medtronic_reservoir, pumpStatus.reservoirRemainingUnits, 50.0, 20.0)
+        SetWarnColor.setColorInverse(medtronic_reservoir, pumpStatus.reservoirRemainingUnits, 10.0, 5.0)
 
         medtronic_errors.text = pumpStatus.errorInfo
     }
