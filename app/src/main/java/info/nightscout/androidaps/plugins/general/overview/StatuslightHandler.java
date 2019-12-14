@@ -80,7 +80,7 @@ class StatuslightHandler {
             } else if (check.apply(warnThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.ribbonWarning));
             } else {
-                view.setTextColor(MainApp.gc(R.color.color_white));
+                view.setTextColor(MainApp.gc(R.color.ribbonDefault));
             }
             view.setVisibility(View.VISIBLE);
         } else {
