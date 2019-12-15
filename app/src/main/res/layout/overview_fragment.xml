@@ -398,14 +398,15 @@
                 <LinearLayout
                     android:id="@+id/overview_statuslights"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/overview_canulaage"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginHorizontal="1dp"
                         android:autoSizeMaxTextSize="14sp"
                         android:autoSizeMinTextSize="8sp"
@@ -419,7 +420,7 @@
                     <TextView
                         android:id="@+id/overview_insulinage"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginHorizontal="1dp"
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_insulin"
@@ -433,7 +434,7 @@
                     <TextView
                         android:id="@+id/overview_reservoirlevel"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginHorizontal="1dp"
                         android:autoSizeMaxTextSize="14sp"
                         android:autoSizeMinTextSize="8sp"
@@ -448,7 +449,7 @@
                     <TextView
                         android:id="@+id/overview_sensorage"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginHorizontal="1dp"
                         android:autoSizeMaxTextSize="14sp"
                         android:autoSizeMinTextSize="8sp"
@@ -462,7 +463,7 @@
                     <TextView
                         android:id="@+id/overview_batterylevel"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginHorizontal="1dp"
                         android:autoSizeMaxTextSize="14sp"
                         android:autoSizeMinTextSize="8sp"
