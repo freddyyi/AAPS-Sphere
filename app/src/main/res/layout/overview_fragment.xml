@@ -416,20 +416,20 @@
                         android:gravity="center"
                         android:text="" />
 
-                    <!--                <TextView
+               <TextView
                      android:id="@+id/overview_insulinage"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
                      android:layout_marginHorizontal="3dp"
                      android:gravity="center"
                      android:background="@drawable/bg_pille_status"
-                     android:drawableLeft="@drawable/ic_insulin_25"
+                     android:drawableLeft="@drawable/ic_"
                      android:autoSizeTextType="uniform"
                      android:autoSizeMinTextSize="8sp"
                      android:autoSizeMaxTextSize="14sp"
                      android:autoSizeStepGranularity="1sp"
                      android:text=""
-                     android:textSize="14sp" /> -->
+                     android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/overview_reservoirlevel"
