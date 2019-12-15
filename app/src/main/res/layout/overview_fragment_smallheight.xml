@@ -333,7 +333,89 @@
 
             </LinearLayout>
 
-<!--            <LinearLayout
+            <!--  STATUSLIGHTS -->
+            <LinearLayout
+                android:id="@+id/overview_statuslights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/overview_canulaage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:autoSizeMaxTextSize="14sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/bg_pille_status"
+                    android:drawableLeft="@drawable/ic_statuslight_katheter"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/overview_insulinage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:background="@drawable/bg_pille_status"
+                    android:drawableLeft="@drawable/ic_statuslight_insulin"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeMaxTextSize="14sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/overview_reservoirlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:autoSizeMaxTextSize="14sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/bg_pille_status"
+                    android:drawableLeft="@drawable/ic_statuslight_cartridge"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text=""
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/overview_sensorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:autoSizeMaxTextSize="14sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/bg_pille_status"
+                    android:drawableLeft="@drawable/ic_statuslight_sensor"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/overview_batterylevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:autoSizeMaxTextSize="14sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/bg_pille_status"
+                    android:drawableLeft="@drawable/ic_statuslight_battery"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text=""
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <!--            <LinearLayout
                 android:id="@+id/overview_statuslights"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
