@@ -19,6 +19,7 @@ import info.nightscout.androidaps.plugins.pump.common.defs.PumpType;
 import info.nightscout.androidaps.utils.DecimalFormatter;
 import info.nightscout.androidaps.utils.SP;
 import info.nightscout.androidaps.utils.SetWarnColor;
+import kotlin.Unit;
 
 class StatuslightHandler {
 
@@ -116,7 +117,7 @@ class StatuslightHandler {
 
         handleLevel(R.string.key_statuslights_res_critical, 20.0,
                 R.string.key_statuslights_res_warning, 50.0,
-                reservoirView, " U" , pump.getReservoirLevel());
+                reservoirView, ""+"U" , pump.getReservoirLevel());
 
         handleAge("sage", CareportalEvent.SENSORCHANGE, sageView, "",
                 164, 166);
