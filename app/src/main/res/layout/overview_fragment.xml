@@ -413,7 +413,7 @@
                         android:autoSizeTextType="uniform"
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_katheter"
-                        android:gravity="center"
+                        android:gravity="center_vertical|center_horizontal"
                         android:text="" />
 
                     <TextView
@@ -421,13 +421,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="1dp"
-                        android:gravity="center"
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_insulin"
                         android:autoSizeTextType="uniform"
                         android:autoSizeMinTextSize="8sp"
                         android:autoSizeMaxTextSize="14sp"
                         android:autoSizeStepGranularity="1sp"
+                        android:gravity="center_vertical|center_horizontal"
                         android:text="" />
 
                     <TextView
@@ -441,7 +441,7 @@
                         android:autoSizeTextType="uniform"
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_cartridge"
-                        android:gravity="center"
+                        android:gravity="center_vertical|center_horizontal"
                         android:text="" />
 
                     <TextView
@@ -455,7 +455,7 @@
                         android:autoSizeTextType="uniform"
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_sensor"
-                        android:gravity="center"
+                        android:gravity="center_vertical|center_horizontal"
                         android:text="" />
 
                     <TextView
@@ -469,7 +469,7 @@
                         android:autoSizeTextType="uniform"
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_battery"
-                        android:gravity="center"
+                        android:gravity="center_vertical|center_horizontal"
                         android:text="" />
 
                 </LinearLayout>
