@@ -124,7 +124,7 @@ class StatuslightHandler {
         if (pump.model() != PumpType.AccuChekCombo) {
             handleLevel(R.string.key_statuslights_bat_critical, 26.0,
                     R.string.key_statuslights_bat_warning, 51.0,
-                    batteryView, " %s", pump.getBatteryLevel());
+                    batteryView, "%", pump.getBatteryLevel());
         } else {
             handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "%s",
                     336, 240);
