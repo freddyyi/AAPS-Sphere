@@ -126,7 +126,7 @@ class StatuslightHandler {
                     R.string.key_statuslights_bat_warning, 51.0,
                     batteryView, " ", pump.getBatteryLevel());
         } else {
-            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, " %%%n",
+            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "%%",
                     336, 240);
         }
     }
