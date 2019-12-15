@@ -34,7 +34,7 @@ class StatuslightHandler {
 
         double reservoirLevel = pump.isInitialized() ? pump.getReservoirLevel() : -1;
         applyStatuslightLevel(R.string.key_statuslights_res_critical, 5.0,
-                R.string.key_statuslights_res_warning, 10.0, reservoirView, "U", reservoirLevel);
+                R.string.key_statuslights_res_warning, 10.0, reservoirView, "", reservoirLevel);
 
         applyStatuslight("sage", CareportalEvent.SENSORCHANGE, sageView, "", 164, 166);
 
@@ -44,7 +44,7 @@ class StatuslightHandler {
                     R.string.key_statuslights_bat_warning, 22.0,
                     batteryView, "", batteryLevel);
         } else {
-            applyStatuslight("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "%", 504, 240);
+            applyStatuslight("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "", 504, 240);
         }
 
     }
@@ -116,7 +116,7 @@ class StatuslightHandler {
 
         handleLevel(R.string.key_statuslights_res_critical, 20.0,
                 R.string.key_statuslights_res_warning, 50.0,
-                reservoirView, "", pump.getReservoirLevel());
+                reservoirView, "U", pump.getReservoirLevel());
 
         handleAge("sage", CareportalEvent.SENSORCHANGE, sageView, "",
                 164, 166);
@@ -126,7 +126,7 @@ class StatuslightHandler {
                     R.string.key_statuslights_bat_warning, 51.0,
                     batteryView, " ", pump.getBatteryLevel());
         } else {
-            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "",
+            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "%",
                     336, 240);
         }
     }
