@@ -442,7 +442,8 @@
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_cartridge"
                         android:gravity="center_vertical|center_horizontal"
-                        android:text="" />
+                        android:text=""
+                        android:textColor="@color/white"/>
 
                     <TextView
                         android:id="@+id/overview_sensorage"
@@ -470,7 +471,8 @@
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_battery"
                         android:gravity="center_vertical|center_horizontal"
-                        android:text="" />
+                        android:text=""
+                        android:textColor="@color/white"/>
 
                 </LinearLayout>
 
