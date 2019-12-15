@@ -412,7 +412,7 @@
                         android:autoSizeStepGranularity="1sp"
                         android:autoSizeTextType="uniform"
                         android:background="@drawable/bg_pille_status"
-                        android:drawableLeft="@drawable/ic_katheter_25"
+                        android:drawableLeft="@drawable/ic_statuslight_katheter"
                         android:gravity="center"
                         android:text="" />
 
@@ -441,7 +441,7 @@
                         android:autoSizeStepGranularity="1sp"
                         android:autoSizeTextType="uniform"
                         android:background="@drawable/bg_pille_status"
-                        android:drawableLeft="@drawable/ic_cartridge_25"
+                        android:drawableLeft="@drawable/ic_statuslight_cartridge"
                         android:gravity="center"
                         android:text="" />
 
@@ -455,7 +455,7 @@
                         android:autoSizeStepGranularity="1sp"
                         android:autoSizeTextType="uniform"
                         android:background="@drawable/bg_pille_status"
-                        android:drawableLeft="@drawable/ic_libre_sensor_25"
+                        android:drawableLeft="@drawable/ic_statuslight_sensor"
                         android:gravity="center"
                         android:text="" />
 
@@ -469,7 +469,7 @@
                         android:autoSizeStepGranularity="1sp"
                         android:autoSizeTextType="uniform"
                         android:background="@drawable/bg_pille_status"
-                        android:drawableLeft="@drawable/ic_battery_25"
+                        android:drawableLeft="@drawable/ic_statuslight_battery"
                         android:gravity="center"
                         android:text="" />
 
