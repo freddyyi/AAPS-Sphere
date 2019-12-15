@@ -423,7 +423,7 @@
                      android:layout_marginHorizontal="3dp"
                      android:gravity="center"
                      android:background="@drawable/bg_pille_status"
-                     android:drawableLeft="@drawable/ic_"
+                     android:drawableLeft="@drawable/ic_statuslight_insulin"
                      android:autoSizeTextType="uniform"
                      android:autoSizeMinTextSize="8sp"
                      android:autoSizeMaxTextSize="14sp"
