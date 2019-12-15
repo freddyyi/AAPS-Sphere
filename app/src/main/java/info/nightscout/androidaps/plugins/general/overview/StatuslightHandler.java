@@ -29,22 +29,22 @@ class StatuslightHandler {
                      TextView sageView, TextView batteryView) {
         PumpInterface pump = ConfigBuilderPlugin.getPlugin().getActivePump();
 
-        applyStatuslight("cage", CareportalEvent.SITECHANGE, cageView, "CAN", 48, 72);
-        applyStatuslight("iage", CareportalEvent.INSULINCHANGE, iageView, "INS", 72, 96);
+        applyStatuslight("cage", CareportalEvent.SITECHANGE, cageView, "", 48, 72);
+        applyStatuslight("iage", CareportalEvent.INSULINCHANGE, iageView, "", 72, 96);
 
         double reservoirLevel = pump.isInitialized() ? pump.getReservoirLevel() : -1;
         applyStatuslightLevel(R.string.key_statuslights_res_critical, 5.0,
-                R.string.key_statuslights_res_warning, 10.0, reservoirView, "RES", reservoirLevel);
+                R.string.key_statuslights_res_warning, 10.0, reservoirView, "", reservoirLevel);
 
-        applyStatuslight("sage", CareportalEvent.SENSORCHANGE, sageView, "SEN", 164, 166);
+        applyStatuslight("sage", CareportalEvent.SENSORCHANGE, sageView, "", 164, 166);
 
         if (pump.model() != PumpType.AccuChekCombo) {
             double batteryLevel = pump.isInitialized() ? pump.getBatteryLevel() : -1;
             applyStatuslightLevel(R.string.key_statuslights_bat_critical, 5.0,
                     R.string.key_statuslights_bat_warning, 22.0,
-                    batteryView, "BAT", batteryLevel);
+                    batteryView, "", batteryLevel);
         } else {
-            applyStatuslight("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "BAT", 504, 240);
+            applyStatuslight("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "", 504, 240);
         }
 
     }
