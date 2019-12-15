@@ -414,7 +414,6 @@
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_katheter"
                         android:gravity="center_vertical|center_horizontal"
-                        android:textColor="@color/white"
                         android:text="" />
 
                     <TextView
@@ -442,7 +441,7 @@
                         android:autoSizeTextType="uniform"
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_cartridge"
-                        android:gravity="center_vertical|center_horizontal"
+                        android:gravity="left"
                         android:text=""
                         android:textColor="@color/white"/>
 
@@ -471,7 +470,7 @@
                         android:autoSizeTextType="uniform"
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_battery"
-                        android:gravity="center_vertical|center_horizontal"
+                        android:gravity="left"
                         android:text=""
                         android:textColor="@color/white"/>
 
