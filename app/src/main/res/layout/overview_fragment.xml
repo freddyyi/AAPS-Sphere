@@ -470,7 +470,8 @@
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_battery"
                         android:gravity="center"
-                        android:text="" />
+                        android:text=""
+                        android:paddingHorizontal="5dp"/>
 
                 </LinearLayout>
 
