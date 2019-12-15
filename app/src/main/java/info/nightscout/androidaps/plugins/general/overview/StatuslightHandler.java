@@ -117,7 +117,7 @@ class StatuslightHandler {
 
         handleLevel(R.string.key_statuslights_res_critical, 20.0,
                 R.string.key_statuslights_res_warning, 50.0,
-                reservoirView, ""+"U" , pump.getReservoirLevel());
+                reservoirView, " + U" , pump.getReservoirLevel());
 
         handleAge("sage", CareportalEvent.SENSORCHANGE, sageView, "",
                 164, 166);
