@@ -91,7 +91,7 @@
 
 <!-- Die drei Schaltbutton oben -->
     <color name="ribbonDefault">#5a595b</color> <!-- BG Farbe #5a595b fuer die Pille und auch die Farben für StatusLights -->
-    <color name="ribbonWarning">#ffffff</color>  <!-- Die drei Schaltflaechen oben wenn etwas ausser der Reihe aktiviert wurde und Farbe CAN INS SEN ...vor Warnung -->
+    <color name="ribbonWarning">#f0a30a</color>  <!-- Die drei Schaltflaechen oben wenn etwas ausser der Reihe aktiviert wurde und Farbe CAN INS SEN ...vor Warnung -->
     <color name="ribbonCritical">#f00d0a</color>
     <color name="ribbonTextDefault">#FFFFFF</color>
     <color name="ribbonTextWarning">#FFFFFF</color>
