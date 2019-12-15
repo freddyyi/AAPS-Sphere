@@ -150,6 +150,7 @@ class StatuslightHandler {
             double resUrgent = SP.getDouble(criticalSetting, criticalDefaultValue);
             double resWarn = SP.getDouble(warnSetting, warnDefaultValue);
             view.setText(text + DecimalFormatter.to0Decimal(level));
+            view.setTextColor(MainApp.gc(R.color.white));
 //            SetWarnColor.setColorInverse(view, level, resWarn, resUrgent);
         }
     }
