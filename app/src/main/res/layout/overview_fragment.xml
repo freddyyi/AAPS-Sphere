@@ -414,6 +414,7 @@
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_katheter"
                         android:gravity="center_vertical|center_horizontal"
+                        android:textColor="@color/white"
                         android:text="" />
 
                     <TextView
