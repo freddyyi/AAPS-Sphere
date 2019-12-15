@@ -80,7 +80,7 @@ class StatuslightHandler {
         if (value != invalid) {
             view.setText(text);
             view.setTextColor(MainApp.gc(R.color.white));
-//            view.setBackgroundColor(MainApp.gc(R.color.transparent));
+            view.setBackgroundColor(MainApp.gc(R.color.transparent));
             if (check.apply(urgentThreshold)) {
                 Drawable drawable = view.getBackground();
                 drawable.setColorFilter(new PorterDuffColorFilter(0xffcd6839, PorterDuff.Mode.SRC_OUT));
