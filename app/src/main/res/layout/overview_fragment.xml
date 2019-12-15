@@ -395,28 +395,28 @@
                 </LinearLayout> -->
 
 <!--  STATUSLIGHTS -->
-               <LinearLayout
-                   android:id="@+id/overview_statuslights"
-                   android:layout_width="match_parent"
-                   android:layout_height="25dp"
-                   android:gravity="center_horizontal"
-                   android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/overview_statuslights"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
 
-                   <TextView
-                       android:id="@+id/overview_canulaage"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:layout_marginHorizontal="1dp"
-                       android:gravity="center"
-                       android:background="@drawable/bg_pille_status"
-                       android:drawableLeft="@drawable/ic_katheter_25"
-                       android:autoSizeTextType="uniform"
-                       android:autoSizeMinTextSize="10sp"
-                       android:autoSizeMaxTextSize="12sp"
-                       android:autoSizeStepGranularity="1sp"
-                       android:text="" />
+                    <TextView
+                        android:id="@+id/overview_canulaage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="1dp"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/bg_pille_status"
+                        android:drawableLeft="@drawable/ic_katheter_25"
+                        android:gravity="center"
+                        android:text="" />
 
-<!--                <TextView
+                    <!--                <TextView
                      android:id="@+id/overview_insulinage"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
@@ -425,55 +425,55 @@
                      android:background="@drawable/bg_pille_status"
                      android:drawableLeft="@drawable/ic_insulin_25"
                      android:autoSizeTextType="uniform"
-                     android:autoSizeMinTextSize="12sp"
-                     android:autoSizeMaxTextSize="12sp"
+                     android:autoSizeMinTextSize="8sp"
+                     android:autoSizeMaxTextSize="14sp"
                      android:autoSizeStepGranularity="1sp"
                      android:text=""
                      android:textSize="14sp" /> -->
 
-                   <TextView
-                       android:id="@+id/overview_reservoirlevel"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:layout_marginHorizontal="1dp"
-                       android:gravity="center"
-                       android:background="@drawable/bg_pille_status"
-                       android:drawableLeft="@drawable/ic_cartridge_25"
-                       android:autoSizeTextType="uniform"
-                       android:autoSizeMinTextSize="10sp"
-                       android:autoSizeMaxTextSize="12sp"
-                       android:autoSizeStepGranularity="1sp"
-                       android:text="" />
+                    <TextView
+                        android:id="@+id/overview_reservoirlevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="1dp"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/bg_pille_status"
+                        android:drawableLeft="@drawable/ic_cartridge_25"
+                        android:gravity="center"
+                        android:text="" />
 
-                   <TextView
-                       android:id="@+id/overview_sensorage"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:layout_marginHorizontal="1dp"
-                       android:gravity="center"
-                       android:background="@drawable/bg_pille_status"
-                       android:drawableLeft="@drawable/ic_libre_sensor_25"
-                       android:autoSizeTextType="uniform"
-                       android:autoSizeMinTextSize="10sp"
-                       android:autoSizeMaxTextSize="12sp"
-                       android:autoSizeStepGranularity="1sp"
-                       android:text="" />
+                    <TextView
+                        android:id="@+id/overview_sensorage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="1dp"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/bg_pille_status"
+                        android:drawableLeft="@drawable/ic_libre_sensor_25"
+                        android:gravity="center"
+                        android:text="" />
 
-                   <TextView
-                       android:id="@+id/overview_batterylevel"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:layout_marginHorizontal="1dp"
-                       android:gravity="center"
-                       android:background="@drawable/bg_pille_status"
-                       android:drawableLeft="@drawable/ic_battery_25"
-                       android:autoSizeTextType="uniform"
-                       android:autoSizeMinTextSize="10sp"
-                       android:autoSizeMaxTextSize="12sp"
-                       android:autoSizeStepGranularity="1sp"
-                       android:text="" />
+                    <TextView
+                        android:id="@+id/overview_batterylevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="1dp"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:autoSizeMinTextSize="8sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/bg_pille_status"
+                        android:drawableLeft="@drawable/ic_battery_25"
+                        android:gravity="center"
+                        android:text="" />
 
-               </LinearLayout>
+                </LinearLayout>
 
 <!-- Grafiken -->
                 <RelativeLayout
