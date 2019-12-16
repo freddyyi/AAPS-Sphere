@@ -19,10 +19,10 @@ import info.nightscout.androidaps.plugins.pump.common.defs.PumpType;
 import info.nightscout.androidaps.utils.DecimalFormatter;
 import info.nightscout.androidaps.utils.SP;
 import info.nightscout.androidaps.utils.SetWarnColor;
-import kotlin.Unit;
 
 class StatuslightHandler {
 
+    boolean extended = false;
     /**
      * applies the statuslight subview on the overview fragement
      */
@@ -30,22 +30,25 @@ class StatuslightHandler {
                      TextView sageView, TextView batteryView) {
         PumpInterface pump = ConfigBuilderPlugin.getPlugin().getActivePump();
 
-        applyStatuslight("cage", CareportalEvent.SITECHANGE, cageView, "", 48, 72);
-        applyStatuslight("iage", CareportalEvent.INSULINCHANGE, iageView, "", 72, 96);
+        applyStatuslight("cage", CareportalEvent.SITECHANGE, cageView, extended ? (MainApp.getDbHelper().getLastCareportalEvent(CareportalEvent.SITECHANGE).age(true) + " ") : "", 48, 72);
+        applyStatuslight("iage", CareportalEvent.INSULINCHANGE, iageView, extended ? (MainApp.getDbHelper().getLastCareportalEvent(CareportalEvent.INSULINCHANGE).age(true) + " ") : "", 72, 96);
 
         double reservoirLevel = pump.isInitialized() ? pump.getReservoirLevel() : -1;
-        applyStatuslightLevel(R.string.key_statuslights_res_critical, 5.0,
-                R.string.key_statuslights_res_warning, 10.0, reservoirView, "", reservoirLevel);
+        applyStatuslightLevel(R.string.key_statuslights_res_critical, 20.0,
+                R.string.key_statuslights_res_warning, 50.0, reservoirView, "", reservoirLevel);
+        reservoirView.setText(extended ? (DecimalFormatter.to0Decimal(reservoirLevel) + "U ") : "");
 
-        applyStatuslight("sage", CareportalEvent.SENSORCHANGE, sageView, "", 164, 166);
+        applyStatuslight("sage", CareportalEvent.SENSORCHANGE, sageView, extended ? (MainApp.getDbHelper().getLastCareportalEvent(CareportalEvent.SENSORCHANGE).age(true) + " ") : "", 164, 166);
 
-        if (pump.model() != PumpType.AccuChekCombo) {
+        if (pump.model() != PumpType.AccuChekCombo && pump.model() != PumpType.DanaRS) {
             double batteryLevel = pump.isInitialized() ? pump.getBatteryLevel() : -1;
-            applyStatuslightLevel(R.string.key_statuslights_bat_critical, 5.0,
-                    R.string.key_statuslights_bat_warning, 22.0,
+            applyStatuslightLevel(R.string.key_statuslights_bat_critical, 26.0,
+                    R.string.key_statuslights_bat_warning, 51.0,
                     batteryView, "", batteryLevel);
+            batteryView.setText(batteryView.getText() + (extended ? "% " : ""));
+
         } else {
-            applyStatuslight("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "", 504, 240);
+            applyStatuslight("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, extended ? (MainApp.getDbHelper().getLastCareportalEvent(CareportalEvent.PUMPBATTERYCHANGE).age(true) + " ") : "", 504, 240);
         }
 
     }
@@ -81,15 +84,15 @@ class StatuslightHandler {
             view.setText(text);
 //            view.setBackgroundColor(MainApp.gc(R.color.transparent));
             if (check.apply(urgentThreshold)) {
-                view.setTextColor(MainApp.gc(R.color.white));
+                view.setTextColor(MainApp.gc(R.color.color_white));
                 Drawable drawable = view.getBackground();
                 drawable.setColorFilter(new PorterDuffColorFilter(0xffcd6839, PorterDuff.Mode.SRC_OUT));
             } else if (check.apply(warnThreshold)) {
-                view.setTextColor(MainApp.gc(R.color.white));
+                view.setTextColor(MainApp.gc(R.color.color_white));
                 Drawable drawable = view.getBackground();
                 drawable.setColorFilter(new PorterDuffColorFilter(0xfff0a30a, PorterDuff.Mode.SRC_OUT));
             } else {
-                view.setTextColor(MainApp.gc(R.color.white));
+                view.setTextColor(MainApp.gc(R.color.color_white));
                 Drawable drawable = view.getBackground();
                 drawable.setColorFilter(new PorterDuffColorFilter(0x20FFFFFF, PorterDuff.Mode.SRC_OUT));
             }
@@ -106,28 +109,29 @@ class StatuslightHandler {
     void extendedStatuslight(TextView cageView, TextView iageView,
                              TextView reservoirView, TextView sageView,
                              TextView batteryView) {
+
+        extended = true;
+        statuslight(cageView, iageView, reservoirView, sageView, batteryView);
+
+
         PumpInterface pump = ConfigBuilderPlugin.getPlugin().getActivePump();
-
-        handleAge("cage", CareportalEvent.SITECHANGE, cageView, "",
+ /*       handleAge("cage", CareportalEvent.SITECHANGE, cageView, " ",
                 48, 72);
-
         handleAge("iage", CareportalEvent.INSULINCHANGE, iageView, "",
                 72, 96);
-
-
         handleLevel(R.string.key_statuslights_res_critical, 20.0,
                 R.string.key_statuslights_res_warning, 50.0,
-                reservoirView, "U " , pump.getReservoirLevel());
-
-        handleAge("sage", CareportalEvent.SENSORCHANGE, sageView, "",
-                164, 166);
-
-        if (pump.model() != PumpType.AccuChekCombo) {
+                reservoirView, "", pump.getReservoirLevel());
+        reservoirView.setText(reservoirView.getText() + "U ");
+        handleAge("sage", CareportalEvent.SENSORCHANGE, sageView, " ",
+                164, 166);*/
+        if (pump.model() != PumpType.AccuChekCombo && pump.model() != PumpType.DanaRS) {
             handleLevel(R.string.key_statuslights_bat_critical, 26.0,
                     R.string.key_statuslights_bat_warning, 51.0,
-                    batteryView, "% ", pump.getBatteryLevel());
+                    batteryView, "", pump.getBatteryLevel());
+            batteryView.setText(reservoirView.getText() + "% ");
         } else {
-            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "% ",
+            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "",
                     336, 240);
         }
     }
@@ -150,7 +154,7 @@ class StatuslightHandler {
             double resUrgent = SP.getDouble(criticalSetting, criticalDefaultValue);
             double resWarn = SP.getDouble(warnSetting, warnDefaultValue);
             view.setText(text + DecimalFormatter.to0Decimal(level));
-//         SetWarnColor.setColorInverse(view, level, resWarn, resUrgent);
+//            SetWarnColor.setColorInverse(view, level, resWarn, resUrgent);
         }
     }
 
