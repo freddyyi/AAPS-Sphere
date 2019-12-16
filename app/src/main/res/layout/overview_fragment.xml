@@ -253,7 +253,7 @@
                                 android:layout_height="25dp"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="12dp"
-                                android:background="@drawable/ic_delta_48">
+                                android:background="@drawable/ic_delta_28">
 
                             </ImageView>
 
@@ -262,7 +262,7 @@
                                 android:layout_height="28dp"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="18dp"
-                                android:background="@drawable/ic_clock_48">
+                                android:background="@drawable/ic_clock_28">
 
                             </ImageView>
 
@@ -271,7 +271,7 @@
                                 android:layout_height="28dp"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="17dp"
-                                android:background="@drawable/ic_iob_48">
+                                android:background="@drawable/ic_iob_28">
 
                             </ImageView>
 
@@ -279,7 +279,7 @@
                                 android:layout_width="28dp"
                                 android:layout_height="28dp"
                                 android:layout_marginStart="17dp"
-                                android:background="@drawable/ic_carb_48">
+                                android:background="@drawable/ic_carb_28">
 
                             </ImageView>
 
@@ -288,7 +288,7 @@
                                 android:layout_height="28dp"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="15dp"
-                                android:background="@drawable/ic_basalrate_48">
+                                android:background="@drawable/ic_basalrate_28">
 
                             </ImageView>
 
