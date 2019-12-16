@@ -131,7 +131,7 @@ class StatuslightHandler {
                     batteryView, "\"% \" : \"\"", pump.getBatteryLevel());
             batteryView.setText(reservoirView.getText() + (extended ? "% " : ""));
         } else {
-            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "",
+            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "% \" : \"",
                     336, 240);
         }
     }
