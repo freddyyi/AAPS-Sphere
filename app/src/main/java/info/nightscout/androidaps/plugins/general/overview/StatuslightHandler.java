@@ -115,6 +115,7 @@ class StatuslightHandler {
 
 
         PumpInterface pump = ConfigBuilderPlugin.getPlugin().getActivePump();
+        double batteryLevel = pump.isInitialized() ? pump.getBatteryLevel() : -1;
  /*       handleAge("cage", CareportalEvent.SITECHANGE, cageView, " ",
                 48, 72);
         handleAge("iage", CareportalEvent.INSULINCHANGE, iageView, "",
@@ -128,8 +129,8 @@ class StatuslightHandler {
         if (pump.model() != PumpType.AccuChekCombo && pump.model() != PumpType.DanaRS) {
             handleLevel(R.string.key_statuslights_bat_critical, 26.0,
                     R.string.key_statuslights_bat_warning, 51.0,
-                    batteryView, "\"% \" : \"\"", pump.getBatteryLevel());
-            batteryView.setText(reservoirView.getText() + (extended ? "% " : ""));
+                    batteryView, "", batteryLevel);
+            batteryView.setText(batteryView.getText() + (extended ? "% " : ""));
         } else {
             handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "% \" : \"",
                     336, 240);
