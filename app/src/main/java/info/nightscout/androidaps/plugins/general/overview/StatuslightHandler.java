@@ -128,10 +128,10 @@ class StatuslightHandler {
         if (pump.model() != PumpType.AccuChekCombo && pump.model() != PumpType.DanaRS) {
             handleLevel(R.string.key_statuslights_bat_critical, 26.0,
                     R.string.key_statuslights_bat_warning, 51.0,
-                    batteryView, "", pump.getBatteryLevel());
+                    batteryView, "\"% \" : \"\"", pump.getBatteryLevel());
             batteryView.setText(reservoirView.getText() + "% ");
         } else {
-            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "",
+            handleAge("bage", CareportalEvent.PUMPBATTERYCHANGE, batteryView, "\"% \" : \"\"",
                     336, 240);
         }
     }
