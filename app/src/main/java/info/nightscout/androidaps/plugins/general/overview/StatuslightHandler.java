@@ -86,7 +86,7 @@ class StatuslightHandler {
             if (check.apply(urgentThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.color_white));
                 Drawable drawable = view.getBackground();
-                drawable.setColorFilter(new PorterDuffColorFilter(0xffcd6839, PorterDuff.Mode.SRC_OUT));
+                drawable.setColorFilter(new PorterDuffColorFilter(0xf7806a, PorterDuff.Mode.SRC_OUT));
             } else if (check.apply(warnThreshold)) {
                 view.setTextColor(MainApp.gc(R.color.color_white));
                 Drawable drawable = view.getBackground();
