@@ -253,7 +253,7 @@
                                 android:layout_height="25dp"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="12dp"
-                                android:background="@drawable/ic_delta_28">
+                                android:background="@drawable/ic_delta_28_2">
 
                             </ImageView>
 
