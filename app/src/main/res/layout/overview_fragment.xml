@@ -262,7 +262,7 @@
                                 android:layout_height="28dp"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="18dp"
-                                android:background="@drawable/ic_repeat_28">
+                                android:background="@drawable/ic_clock_28">
 
                             </ImageView>
 
