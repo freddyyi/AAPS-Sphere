@@ -26,6 +26,7 @@
             android:text="@string/overview_editquickwizardlistactivity_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/white_trans_bg"
             android:id="@+id/overview_quickwizardactivity_add_button" />
 
         <androidx.recyclerview.widget.RecyclerView

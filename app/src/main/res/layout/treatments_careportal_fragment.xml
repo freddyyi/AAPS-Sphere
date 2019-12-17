@@ -19,6 +19,7 @@
                 style="?android:attr/buttonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:background="@drawable/white_trans_bg"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
                 android:text="@string/refresheventsfromnightscout" />
@@ -28,6 +29,7 @@
                 style="?android:attr/buttonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:background="@drawable/white_trans_bg"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
                 android:text="@string/careportal_removestartedevents" />
