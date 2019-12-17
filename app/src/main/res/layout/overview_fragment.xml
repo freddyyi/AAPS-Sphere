@@ -216,7 +216,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="10dp"
                                 android:autoSizeTextType="uniform"
-                                android:paddingTop="6dp"
+                                android:paddingTop="2dp"
                                 android:paddingBottom="6dp"
                                 android:autoSizeMinTextSize="7sp"
                                 android:autoSizeMaxTextSize="18sp"
