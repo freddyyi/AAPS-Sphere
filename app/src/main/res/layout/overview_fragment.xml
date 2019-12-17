@@ -222,7 +222,7 @@
                                 android:autoSizeMaxTextSize="18sp"
                                 android:autoSizeStepGranularity="1sp"
                                 android:background="@drawable/ic_ball_grey"
-                                android:gravity="center"
+                                android:gravity="center_vertical|center_horizontal"
                                 android:text=""
                                 android:textColor="@android:color/black" />
 
