@@ -255,7 +255,7 @@
                                 android:layout_height="25dp"
                                 android:layout_gravity="start"
                                 android:layout_marginStart="12dp"
-                                android:background="@drawable/ic_delta_white_28">
+                                android:background="@drawable/ic_delta_28">
 
                             </ImageView>
 
@@ -290,7 +290,7 @@
                                 android:layout_height="28dp"
                                 android:layout_gravity="end"
                                 android:layout_marginStart="15dp"
-                                android:background="@drawable/ic_bas_28_2">
+                                android:background="@drawable/ic_basalrate_28">
 
                             </ImageView>
 
