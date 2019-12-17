@@ -230,7 +230,7 @@
                                     android:layout_height="25dp"
                                     android:layout_gravity="start"
                                     android:layout_marginStart="5dp"
-                                    android:background="@drawable/ic_delta_48">
+                                    android:background="@drawable/ic_delta_28_2">
 
                                 </ImageView>
 
@@ -239,7 +239,7 @@
                                     android:layout_height="25dp"
                                     android:layout_gravity="start"
                                     android:layout_marginStart="12dp"
-                                    android:background="@drawable/ic_clock_48">
+                                    android:background="@drawable/ic_clock_28">
 
                                 </ImageView>
 
