@@ -216,7 +216,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="10dp"
                                 android:autoSizeTextType="uniform"
-                                android:autoSizeMinTextSize="8sp"
+                                android:autoSizeMinTextSize="6sp"
                                 android:autoSizeMaxTextSize="18sp"
                                 android:autoSizeStepGranularity="1sp"
                                 android:background="@drawable/ic_ball_grey"
