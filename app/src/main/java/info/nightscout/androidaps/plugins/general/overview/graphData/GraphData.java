@@ -298,6 +298,7 @@ public class GraphData {
             if (t.isSMB && !t.isValid) continue;
             t.setY(getNearestBg((long) t.getX()));
             filteredTreatments.add(t);
+
         }
 
         // ProfileSwitch
@@ -430,8 +431,8 @@ public class GraphData {
         iobSeries = new FixedLineGraphSeries<>(iobData);
         iobSeries.setDrawBackground(true);
         iobSeries.setBackgroundColor(0x80FFFFFF & MainApp.gc(R.color.iob)); //50%
-        iobSeries.setColor(MainApp.gc(R.color.iob));
-        iobSeries.setThickness(3);
+        iobSeries.setColor(MainApp.gc(R.color.white));
+        iobSeries.setThickness(6);
 
         if (showPrediction) {
             AutosensResult lastAutosensResult;
@@ -512,9 +513,9 @@ public class GraphData {
         cobData = cobArray.toArray(cobData);
         cobSeries = new FixedLineGraphSeries<>(cobData);
         cobSeries.setDrawBackground(true);
-        cobSeries.setBackgroundColor(0x80FFFFFF & MainApp.gc(R.color.cob)); //50%
-        cobSeries.setColor(MainApp.gc(R.color.cob));
-        cobSeries.setThickness(3);
+        cobSeries.setBackgroundColor(0x99FFFFFF & MainApp.gc(R.color.cob)); //50%
+        cobSeries.setColor(MainApp.gc(R.color.white));
+        cobSeries.setThickness(6);
 
         if (useForScale) {
             maxY = maxCobValueFound;
