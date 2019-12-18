@@ -276,13 +276,13 @@ public class GraphData {
             lastTarget = value;
         }
         targetsSeriesArray.add(new DataPoint(toTime, lastTarget));
-//Linien Stärke der des TT im oberen Graphen
+//Linien Stärke des TT im oberen Graphen
         DataPoint[] targets = new DataPoint[targetsSeriesArray.size()];
         targets = targetsSeriesArray.toArray(targets);
         targetsSeries = new LineGraphSeries<>(targets);
         targetsSeries.setDrawBackground(false);
         targetsSeries.setColor(MainApp.gc(R.color.tempTargetBackground));
-        targetsSeries.setThickness(2);
+        targetsSeries.setThickness(0);
 
         addSeries(targetsSeries);
     }
