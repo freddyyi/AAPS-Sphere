@@ -360,7 +360,6 @@
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_katheter"
                         android:gravity="center_vertical|center_horizontal"
-                        android:paddingRight="3dp"
                         android:text="" />
 
 <!--                    <TextView
@@ -404,7 +403,6 @@
                         android:background="@drawable/bg_pille_status"
                         android:drawableLeft="@drawable/ic_statuslight_sensor"
                         android:gravity="center_vertical|center_horizontal"
-                        android:paddingRight="3dp"
                         android:text="" />
 
                     <TextView
