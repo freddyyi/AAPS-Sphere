@@ -221,7 +221,7 @@ public class GraphData {
         basalsLineSeries = new LineGraphSeries<>(basalLine);
         Paint paint = new Paint();
         paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(MainApp.instance().getApplicationContext().getResources().getDisplayMetrics().scaledDensity * 2);
+        paint.setStrokeWidth(MainApp.instance().getApplicationContext().getResources().getDisplayMetrics().scaledDensity * 1);
         paint.setPathEffect(new DashPathEffect(new float[]{2, 4}, 0));
         paint.setColor(MainApp.gc(R.color.basal));
         basalsLineSeries.setCustomPaint(paint);
@@ -231,8 +231,8 @@ public class GraphData {
         absoluteBasalsLineSeries = new LineGraphSeries<>(absoluteBasalLine);
         Paint absolutePaint = new Paint();
         absolutePaint.setStyle(Paint.Style.STROKE);
-        absolutePaint.setStrokeWidth(MainApp.instance().getApplicationContext().getResources().getDisplayMetrics().scaledDensity * 2);
-        absolutePaint.setColor(MainApp.gc(R.color.basal));
+        absolutePaint.setStrokeWidth(MainApp.instance().getApplicationContext().getResources().getDisplayMetrics().scaledDensity * 1);
+        absolutePaint.setColor(MainApp.gc(R.color.white));
         absoluteBasalsLineSeries.setCustomPaint(absolutePaint);
 
         basalScale.setMultiplier(maxY * scale / maxBasalValueFound);

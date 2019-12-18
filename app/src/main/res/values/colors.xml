@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="prediction">#ff00ff</color>
-    <color name="basal">#149baf</color>  <!-- Standard #00ffff Zeigt auch die Farbe im Graphen für die Basal Umrandung
-    und oben 1,30/h@10:32 4/30 (o,00U/h)die Behandlungen. Außerdem die Schrift Farbe von Basal wenn man auf das Dropdown Menu klickt -->
-    <color name="iob">#149baf</color>
+    <color name="iob">#1ba1e2</color>
     <color name="iobPred">#00d2d2</color>
     <color name="iobPredAS">#1ea3e5</color>
-    <color name="bolus">#149baf</color>
+    <color name="bolus">#1ba1e2</color>
     <color name="cob">#f0a30a</color>
     <color name="carbs">#f0a30a</color>
     <color name="uam">#c9bd60</color>
@@ -27,8 +25,9 @@
     <color name="cobAlert">#7484E2</color>
     <color name="inrangebackground">#20FFFFFF</color> <!-- Grafikbereich fuer die gewaehlten BG Werte hoch und tief im Graphen -->
     <color name="inrange_bg">#FFFFFF</color> <!-- Schriftfarbe der BG Anzeige oben links -->
-    <color name="basebasal">#00a3e8</color>
-    <color name="tempbasal">#149baf</color> <!-- Farbe TEMP Basal im Graphen -->
+    <color name="basal">#149baf</color>  <!-- Standard #00ffff Zeigt auch die Farbe im Graphen für die Basal Umrandung. Außerdem die Schrift Farbe von Basal wenn man auf das Dropdown Menu klickt -->
+    <color name="basebasal">#149baf</color>
+    <color name="tempbasal">#32a6b8</color> <!-- Farbe TEMP Basal im Graphen -->
     <color name="graphgrid">#00000000</color> <!-- Farbe der Graphen Raster Linien -->
     <color name="colorLightGray">#d8d8d8</color>
     <color name="warning">#f0a30a</color>
@@ -54,7 +53,7 @@
     <color name="linearBlockBackground">#3e3d3d</color> <!-- Default 3e3d3d -->
     <color name="configBuilderSelectedBackground">#262525</color>
 
- <color name="colorAcceptTempButton">#FFFFFF</color> <!-- Die Schrift Farbe bei Einblendung des Temporären Basal Vorschlages im Open Loop -->
+    <color name="colorAcceptTempButton">#FFFFFF</color> <!-- Die Schrift Farbe bei Einblendung des Temporären Basal Vorschlages im Open Loop -->
 
     <!-- Schaltflächen Schrift Farbe unten -->
 
