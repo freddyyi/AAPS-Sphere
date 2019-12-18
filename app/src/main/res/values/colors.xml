@@ -23,8 +23,7 @@
     <color name="tabBgColorSelected">#00a3e8</color>
     <color name="deviations">#FF0000</color>
     <color name="cobAlert">#7484E2</color>
-    <color name="inrangebackground">#00000000</color> <!-- Grafikbereich fuer die gewaehlten BG Werte hoch und tief im Graphen -->
-    <color name="inrange_bg">#FFFFFF</color> <!-- Schriftfarbe der BG Anzeige oben links -->
+    <color name="inrangebackground">#10FFFFFF</color> <!-- Grafikbereich fuer die gewaehlten BG Werte hoch und tief im Graphen -->
     <color name="basal">#149baf</color>  <!-- Standard #00ffff Zeigt auch die Farbe im Graphen für die Basal Umrandung. Außerdem die Schrift Farbe von Basal wenn man auf das Dropdown Menu klickt -->
     <color name="basebasal">#149baf</color>
     <color name="tempbasal">#32a6b8</color> <!-- Farbe TEMP Basal im Graphen -->
@@ -101,7 +100,6 @@
     <color name="gray">#BBBBBB</color> <!-- #BBBBBB -->
 
     <color name="ic_launcher_background">#424242</color> <!-- Default 424242 -->
-    <color name="common_border_color">#FFFFFF</color>
     <color name="r22_bg">#222222</color>
     <color name="transparent">#20FFFFFF</color>
     <color name="splashBackground">#2E2E2E</color>

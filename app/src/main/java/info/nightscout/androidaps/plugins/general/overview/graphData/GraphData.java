@@ -276,7 +276,7 @@ public class GraphData {
             lastTarget = value;
         }
         targetsSeriesArray.add(new DataPoint(toTime, lastTarget));
-
+//Linien Stärke der des TT im oberen Graphen
         DataPoint[] targets = new DataPoint[targetsSeriesArray.size()];
         targets = targetsSeriesArray.toArray(targets);
         targetsSeries = new LineGraphSeries<>(targets);
