@@ -27,7 +27,7 @@
     <color name="basal">#149baf</color>  <!-- Standard #00ffff Zeigt auch die Farbe im Graphen für die Basal Umrandung. Außerdem die Schrift Farbe von Basal wenn man auf das Dropdown Menu klickt -->
     <color name="basebasal">#149baf</color>
     <color name="tempbasal">#32a6b8</color> <!-- Farbe TEMP Basal im Graphen -->
-    <color name="graphgrid">#20FFFFFF</color> <!-- Farbe der Graphen Raster Linien -->
+    <color name="graphgrid">#30FFFFFF</color> <!-- Farbe der Graphen Raster Linien -->
     <color name="colorLightGray">#d8d8d8</color>
     <color name="warning">#f0a30a</color>
     <color name="error_background">#66FC0000</color>
