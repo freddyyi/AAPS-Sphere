@@ -215,7 +215,7 @@ public class GraphData {
         tempBasalsSeries.setDrawBackground(true);
         tempBasalsSeries.setBackgroundColor(MainApp.gc(R.color.tempbasal));
         tempBasalsSeries.setThickness(0);
-
+//Gestrichelte Basallinie
         ScaledDataPoint[] basalLine = new ScaledDataPoint[basalLineArray.size()];
         basalLine = basalLineArray.toArray(basalLine);
         basalsLineSeries = new LineGraphSeries<>(basalLine);
@@ -223,7 +223,7 @@ public class GraphData {
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(MainApp.instance().getApplicationContext().getResources().getDisplayMetrics().scaledDensity * 1);
         paint.setPathEffect(new DashPathEffect(new float[]{2, 4}, 0));
-        paint.setColor(MainApp.gc(R.color.basal));
+        paint.setColor(MainApp.gc(R.color.white));
         basalsLineSeries.setCustomPaint(paint);
 
         ScaledDataPoint[] absoluteBasalLine = new ScaledDataPoint[absoluteBasalLineArray.size()];
